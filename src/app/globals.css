@@ -3,25 +3,83 @@
 @tailwind utilities;
 
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+  --background: rgb(255 239 211);
+  /* --purpleGradient: linear-gradient(
+    180deg,
+    #2d0051 0%,
+    rgba(51, 0, 91, 0.87) 100%
+  ); */
+  --primaryColor: rgba(252, 235, 147, 1);
+  --secondaryColor: rgba(51, 0, 91, 1);
+  --teritaryColor: rgba(255, 239, 211, 1);
+  --quaternaryColor: rgba(255, 225, 72,0);
+  --fabLinksBackground: rgb(51, 0, 91 ,0.05);
+
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
 }
 
-body {
-  color: var(--foreground);
-  background: var(--background);
-  font-family: Arial, Helvetica, sans-serif;
+.button-animation {
+  @apply transition-all duration-300 ease-in-out hover:translate-x-1 hover:translate-y-[-3px];
 }
 
-@layer utilities {
-  .text-balance {
-    text-wrap: balance;
-  }
+.nav-links{
+  @apply text-[26px] lg:text-lg text-teritary lg:text-secondary font-CooperExtrabold hover:scale-105 transition-all ease-in-out duration-300
+}
+
+.underline-animation {
+  @apply relative inline-block;
+}
+
+.underline-animation::after {
+  @apply dark:bg-white border-secondary  content-[''] rounded-full absolute w-full bottom-[-2px] scale-x-0 border-[1.6px] duration-300 left-0 origin-left transition-all ease-in-out ;
+}
+
+.underline-animation:hover::after {
+  @apply scale-x-100;
+}
+
+.custom-gradient{
+  @apply bg-gradient-to-b from-primary to-quaternary ;
+}
+
+@font-face {
+  font-family: "CooperNormal";
+  src: url("/fonts/Cooper-Regular.woff2");
+  font-weight: 400;
+}
+@font-face {
+  font-family: "CooperMedium";
+  src: url("/fonts/Cooper-Medium.woff2");
+  font-weight: 500;
+}
+@font-face {
+  font-family: "CooperSemiBold";
+  src: url("/fonts/Cooper-SemiBold.woff2");
+  font-weight: 600;
+}
+@font-face {
+  font-family: "CooperBold";
+  src: url("/fonts/Cooper-Bold.woff2");
+  font-weight: 700;
+}
+@font-face {
+  font-family: "CooperExtraBold";
+  src: url("/fonts/Cooper-ExtraBold.woff2");
+  font-weight: 800;
+}
+@font-face {
+  font-family: "CooperBlack";
+  src: url("/fonts/Cooper-Black.woff2");
+  font-weight: 900;
+}
+
+@font-face {
+  font-family: "Helvetica Nue";
+  src: url("/fonts/HelveticaNeueMedium.otf");
+  font-weight: 400;
 }
