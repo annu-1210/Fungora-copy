@@ -1,4 +1,4 @@
-// "use client"
+
 import React, { useState } from "react";
 import Image from "next/image";
 import ActionButton from "./ActionButton";
@@ -92,7 +92,7 @@ function Header() {
               })}
             </div>
 
-            <div className="flex flex-col w-full gap-5 items-center">
+            <div className="flex flex-col items-center w-full gap-5">
               <ActionButton label="Shop now" color="secondary" size="sm" />
               <FAB />
             </div>
