@@ -16,7 +16,7 @@ function WhatIsFungora() {
 
   return (
     <section>
-      <div className="relative pt-20 bg-cover bg-teritary md:pt-24 lg:pt-32 bg-texture-background bg-blend-multiply ">
+      <div className="relative pt-20 bg-cover bg-tertiary md:pt-24 lg:pt-32 bg-texture-background bg-blend-multiply ">
         <Image
           src="/images/mushroom-bg.avif"
           alt="mushroom-img"
@@ -37,7 +37,7 @@ function WhatIsFungora() {
               <Text label={heading} size="md" />
             </p>
             <h2>
-              <Text label={description} size="lg" />
+              <Text label={description} size="xxl" />
             </h2>
           </div>
           <div className="z-20 flex flex-col items-center justify-center text-center md:flex-row md:items-start md:justify-between md:text-start">

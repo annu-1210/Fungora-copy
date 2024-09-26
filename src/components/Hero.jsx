@@ -22,7 +22,7 @@ function Hero() {
               marginBottom: "16px",
             }}
           >
-            <Text label={mainHeading} size="xl" />
+            <Text label={mainHeading} size="xxxl" />
           </h2>
           <div className="relative z-30 flex flex-col items-center justify-center w-full h-full overflow-hidden pt-14 flex-nowrap">
             <Image
@@ -30,7 +30,7 @@ function Hero() {
               alt="hero-bottle-img"
               width={214}
               height={666}
-              className="max-w-[170px] lg:group-hover:z-40 sm:max-w-[180px] 3xl:max-w-[214px] transition-all ease-in-out duration-500 lg:group-hover:scale-110 "
+              className="max-w-[170px] z-0 sm:max-w-[180px] 3xl:max-w-[214px] transition-all ease-in-out duration-500 lg:group-hover:scale-110 "
             />
             <div className="flex translate-x-[0%] justify-center gap-36 flex-nowrap absolute ">
               {Array(3)

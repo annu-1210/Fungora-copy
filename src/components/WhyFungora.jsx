@@ -4,7 +4,7 @@ import Image from "next/image";
 function WhyFungora() {
   return (
     <section>
-      <div className="relative z-0 bg-cover bg-teritary bg-texture-background bg-blend-multiply">
+      <div className="relative z-0 bg-cover bg-tertiary bg-texture-background bg-blend-multiply">
         <div className="relative z-0 px-[21px] md:px-6 xl:px-0 m-auto xl:max-w-[1000px] 2xl:max-w-[1211px] pt-10 md:pt-20 lg:pt-24 xl:pt-24 pb-10 lg:pb-24 xl:pb-32">
           <video
             width="600"
@@ -39,7 +39,7 @@ function WhyFungora() {
           alt="mushroom-img"
           width={1000}
           height={700}
-          className="hidden md:block bottom-[-8%] md:bottom-[-80%] xl:bottom-[-75%] 3xl:bottom-[-80%] z-[-1] absolute right-0 md:max-w-[500px] lg:max-w-[700px] xl:max-w-[750px] 2xl:max-w-[900px]  3xl:max-w-full"
+          className="hidden md:block bottom-[-8%] md:bottom-[-80%] xl:bottom-[-75%] 3xl:bottom-[-80%] z-[-1] absolute right-0 md:max-w-[500px] lg:max-w-[700px] xl:max-w-[750px] 2xl:max-w-[900px] 3xl:max-w-full"
         />
       </div>
     </section>
