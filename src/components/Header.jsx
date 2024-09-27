@@ -28,7 +28,7 @@ function Header() {
     },
   ];
   return (
-    <nav className="absolute top-0 w-full px-4 pt-7 mx-auto lg:pt-[30px] 3xl:pt-[33px] z-20 ">
+    <nav className="absolute top-0 w-full px-4 pt-7 mx-auto lg:pt-[30px] 3xl:pt-[33px] z-50 ">
       <Image
         src="/images/navbar-bg.avif"
         width={1440}
@@ -93,7 +93,7 @@ function Header() {
             </div>
 
             <div className="z-50 flex flex-col items-center w-full gap-5">
-              <ActionButton label="Shop now" color="secondary" size="sm" />
+              <ActionButton label="Shop now" color="secondary" size="md" />
               <FAB />
             </div>
           </div>

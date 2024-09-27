@@ -10,11 +10,10 @@ function WhyFungora() {
             width="600"
             height="400"
             controls
-            autoPlay
             muted
             loop
             className="rounded-[24px] transition-all duration-300 sm:rounded-[52px] border-[5px] mx-auto border-secondary object-cover w-full h-full aspect-video"
-            poster="/poster.png"
+            poster="/images/poster.png"
           >
             <source src="/fungora-video.mp4" type="video/mp4" />
             Your browser does not support the video tag.

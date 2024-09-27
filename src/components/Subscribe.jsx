@@ -30,10 +30,10 @@ function Subscribe() {
           />
           <div className="order-1 md:w-6/12 lg:w-7/12 md:order-2">
             <h2>
-              <Text label={description} size="xxl" />
+              <Text label={description} size="xxl" color="primary"/>
             </h2>
             <p className="max-w-[677px]">
-              <Text label={detail} size="sm" />
+              <Text label={detail} size="sm" color="primary"/>
             </p>
             <form>
               <div className="flex justify-between border border-secondary rounded-full pl-3 pr-1.5 md:px-4 py-1.5 lg:py-3.5 w-full max-w-[633px] mt-4 md:mt-6 xl:mt-[35px]">

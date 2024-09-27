@@ -1,9 +1,27 @@
 import React from "react";
 import Image from "next/image";
 import Text from "./Text";
+import { useState, useEffect } from "react";
 
 function Hero() {
   const mainHeading = "Natural Mushroom Extract";
+
+  const [scrollY, setScrollY] = useState(0);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      setScrollY(window.scrollY);
+    };
+
+    window.addEventListener("scroll", handleScroll);
+
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, []);
+
+  const scale = Math.max(1 - scrollY / 500, 0.5);
+  const opacity = Math.max(1 - scrollY / 300, 0);
   return (
     <section>
       <div className="max-w-[1920px] bg-primary relative bg-texture-background bg-cover bg-blend-multiply ">
@@ -17,12 +35,12 @@ function Hero() {
         <div className="pt-[188px] lg:pt-[180px] 3xl:pt-[221px] relative z-3x0">
           <h2
             style={{
-              opacity: " 0.955266",
-              transform: "translateY(5.5918px) scale(0.955266) translateZ(0px)",
-              marginBottom: "16px",
+              transform: `scale(${scale})`,
+              opacity: `${opacity}`,
             }}
+            className="transition-all duration-200"
           >
-            <Text label={mainHeading} size="xxxl" />
+            <Text label={mainHeading} size="xxxl" color="primary" />
           </h2>
           <div className="relative z-30 flex flex-col items-center justify-center w-full h-full overflow-hidden pt-14 flex-nowrap">
             <Image

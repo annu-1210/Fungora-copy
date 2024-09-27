@@ -10,6 +10,7 @@
   --quaternaryColor: rgba(255, 225, 72, 0);
   --quinaryColor: rgba(237, 221, 193, 1);
   --fabLinksBackground: rgb(51, 0, 91, 0.05);
+  --footerBorder: rgb(51, 0, 91, 0.15);
 }
 
 * {
@@ -62,7 +63,6 @@ body {
     @screen xl {
       width: 354px !important;
       max-width: 354px !important;
-      /* height: 664px !important; */
       max-height: 664px !important;
     }
 
@@ -99,7 +99,7 @@ body {
 }
 
 .nav-links {
-  @apply text-[26px] lg:text-lg text-tertiary lg:text-secondary font-CooperExtrabold hover:scale-105 transition-all ease-in-out duration-300;
+  @apply text-[26px] lg:text-base xl:text-lg text-tertiary lg:text-secondary font-CooperExtrabold hover:scale-105 transition-all ease-in-out duration-300;
 }
 
 .underline-animation {
@@ -116,6 +116,16 @@ body {
 
 .custom-gradient {
   @apply bg-gradient-to-b from-primary to-quaternary;
+}
+
+.footer-links{
+  @apply text-base font-HelveticaNue !leading-[24px] text-secondary opacity-100 md:opacity-80 hover:opacity-100 
+}
+
+@font-face {
+  font-family: "Helvetica Nue";
+  src: url("/fonts/HelveticaNeueMedium.otf");
+  font-weight: 400;
 }
 
 @font-face {
@@ -147,10 +157,4 @@ body {
   font-family: "CooperBlack";
   src: url("/fonts/Cooper-Black.woff2");
   font-weight: 900;
-}
-
-@font-face {
-  font-family: "Helvetica Nue";
-  src: url("/fonts/HelveticaNeueMedium.otf");
-  font-weight: 400;
 }

@@ -26,6 +26,7 @@ module.exports = {
         purplePrimary: "#2d0051",
         purpleSecondary: "rgba(51, 0, 91, 0.87)",
         FabLinksBackground: "var(--fabLinksBackground)",
+        footerBorder: "var(--footerBorder)",
       },
       screens: {
         'xsm': '425px',

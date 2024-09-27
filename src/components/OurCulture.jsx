@@ -50,15 +50,15 @@ function OurCulture() {
               className=" max-w-[30px] md:max-w-10 lg:max-w-full absolute right-[17%] md:right-[22%] lg:right-0 xl:right-[11%] top-[-32%] sm:top-[-60%] md:top-[-8%] z-20"
             />
             <p>
-              <Text label={heading} size="md" />
+              <Text label={heading} size="md" color="primary"/>
             </p>
             <h2 className="pt-4 md:pt-5">
-              <Text label={description} size="xxl" />
+              <Text label={description} size="xxl" color="primary"/>
             </h2>
             {details.map((detail, index) => {
               return (
                 <p key={index}>
-                  <Text label={detail} size="sm" />
+                  <Text label={detail} size="sm" color="primary"/>
                 </p>
               );
             })}
