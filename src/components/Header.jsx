@@ -3,8 +3,8 @@ import Image from "next/image";
 import ActionButton from "./ActionButton";
 import { RxCross2 } from "react-icons/rx";
 import FAB from "./FAB";
-import { FungoraLogo } from "@/assets/svgs";
-import { MenuIcon } from "@/assets/svgs";
+import { FungoraLogo } from "@/app/svgs";
+import { MenuIcon } from "@/app/svgs";
 
 function Header() {
   const [isOpen, setOpen] = useState(false);
