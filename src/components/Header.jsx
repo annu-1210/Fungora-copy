@@ -1,10 +1,11 @@
 import React, { useState } from "react";
 import Image from "next/image";
-import ActionButton from "./ActionButton";
+import ActionButton from "./common/ActionButton";
 import { RxCross2 } from "react-icons/rx";
 import FAB from "./FAB";
 import { FungoraLogo } from "@/app/svgs";
 import { MenuIcon } from "@/app/svgs";
+import { navLinks } from "./common/Helper";
 
 function Header() {
   const [isOpen, setOpen] = useState(false);
@@ -13,24 +14,10 @@ function Header() {
     setOpen(!isOpen);
   };
 
-  const navLinks = [
-    {
-      name: "About us",
-    },
-    {
-      name: "What’s Fungora",
-    },
-    {
-      name: "Why Fungora",
-    },
-    {
-      name: "Our Culture",
-    },
-  ];
   return (
     <nav className="absolute top-0 w-full px-4 pt-7 mx-auto lg:pt-[30px] 3xl:pt-[33px] z-50 ">
       <Image
-        src="/images/navbar-bg.avif"
+        src="/images/avif/navbar-bg.avif"
         width={1440}
         height={20}
         alt=""
@@ -70,7 +57,7 @@ function Header() {
         <aside className="z-50 flex justify-start w-full py-4 lg:hidden">
           <div className="flex gap-4 h-[calc(100vh-102px)] sm:h-[calc(100vh-110px)] backdrop-blur-sm flex-col items-center justify-between w-full rounded-[16px] p-4 bg-gradient-to-b from-purplePrimary to-purpleSecondary relative">
             <Image
-              src="/images/star.png"
+              src="/images/png/star.png"
               alt="star"
               width={25}
               height={36}

@@ -13,20 +13,20 @@ function WhyFungora() {
             muted
             loop
             className="rounded-[24px] transition-all duration-300 sm:rounded-[52px] border-[5px] mx-auto border-secondary object-cover w-full h-full aspect-video"
-            poster="/images/poster.png"
+            poster="/images/png/poster.png"
           >
             <source src="/fungora-video.mp4" type="video/mp4" />
             Your browser does not support the video tag.
           </video>
           <Image
-            src="/images/why-fungora-mushroom.png"
+            src="/images/png/why-fungora-mushroom.png"
             alt="mushroom-img"
             width={80}
             height={87}
             className="max-w-[20px] md:max-w-[50px] 3xl:max-w-full bottom-[81%] sm:bottom-[21%] absolute left-[60%] sm:left-[-3%]"
           />
           <Image
-            src="/images/why-fungora-shell.png"
+            src="/images/png/why-fungora-shell.png"
             alt="shell-img"
             width={66}
             height={66}
@@ -34,7 +34,7 @@ function WhyFungora() {
           />
         </div>
         <Image
-          src="/images/mushroom-bg-2.avif"
+          src="/images/avif/mushroom-bg-2.avif"
           alt="mushroom-img"
           width={1000}
           height={700}

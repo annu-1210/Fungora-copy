@@ -1,37 +1,12 @@
 import React from "react";
-import Text from "./Text";
+import Text from "./common/Text";
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
 import { GiRoundStar } from "react-icons/gi";
+import { testimonials } from "./common/Helper";
 
 function Testimonials() {
   const Heading = "What people say about Fungora?";
-  const testimonials = [
-    {
-      reviewer: "- Ana",
-      title: "Finally got what i really love",
-      review:
-        "Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus id quod maxime placeat facere possimus, omnis voluptas assumenda est, omnis dolor repellendus.",
-    },
-    {
-      reviewer: "- Sofia M",
-      title: "Excellent website to buy Fungora.",
-      review:
-        "Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. dus aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.",
-    },
-    {
-      reviewer: "- Michal",
-      title: "100% original & organic",
-      review:
-        "At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate",
-    },
-    {
-      reviewer: "- Sofia M",
-      title: "Excellent website to buy Fungora.",
-      review:
-        "Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. dus aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.",
-    },
-  ];
 
   return (
     <section>

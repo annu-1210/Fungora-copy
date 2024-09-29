@@ -1,7 +1,7 @@
 import React from "react";
 import Image from "next/image";
-import Text from "./Text";
-import ActionButton from "./ActionButton";
+import Text from "./common/Text";
+import ActionButton from "./common/ActionButton";
 
 function GrabNow() {
   const para = "Ready for a natural boost?";
@@ -11,14 +11,14 @@ function GrabNow() {
         <div className="z-10 px-4 pt-24 pb-20 overflow-hidden md:overflow-visible sm:py-32 bg-tertiary ">
           <div className="max-w-[1196px] w-full bg-gradient-to-b from-purplePrimary to-purpleSecondary mx-auto rounded-[24px] px-5 sm:px-20 lg:px-32 py-10 lg:py-24 flex flex-col lg:flex-row gap-6 h-[420px] lg:h-full lg:justify-between  items-center relative z-20">
             <Image
-              src="/images/star.png"
+              src="/images/png/star.png"
               alt="star"
               width={68}
               height={108}
               className=" absolute left-[71%] xs:left-[60%] lg:left-[64%] top-[30%] xs:top-9 md:top-6 z-40"
             />
             <Image
-              src="/images/star.png"
+              src="/images/png/star.png"
               alt="star"
               width={68}
               height={108}
@@ -54,14 +54,14 @@ function GrabNow() {
           </div>
         </div>
         <Image
-          src="/images/fungora-img-2.png"
+          src="/images/png/fungora-img-2.png"
           alt="fungora"
           width={2016}
           height={296}
           className="hidden z-0 md:block absolute top-[50px]  lg:top-0 h-[220px] xl:max-w-[1440px] 3xl:max-w-[1920px]"
         />
         <Image
-          src="/images/fungora-img-mobile2.png"
+          src="/images/png/fungora-img-mobile2.png"
           alt="fungora"
           width={2016}
           height={296}

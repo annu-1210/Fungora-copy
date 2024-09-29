@@ -1,40 +1,17 @@
 import React from "react";
-import Text from "./Text";
-import ActionButton from "./ActionButton";
+import Text from "./common/Text";
+import ActionButton from "./common/ActionButton";
 import Image from "next/image";
+import { OurCultureDetails } from "./common/Helper";
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/swiper-bundle.css";
 import "swiper/css/autoplay";
+import { slides } from "./common/Helper";
 
 function OurCulture() {
   const heading = "Our culture";
   const description = "Discover the Fungora way";
-  const details = [
-    "Imagine a place where mushrooms are more than just a pizza topping. That's us! Central to our philosophy is the commitment to your health and the pursuit of enhancing it through our carefully crafted extract.",
-    "Join our community and immerse yourself in the Fungora way, fostering a life that's not only balanced and enriched but radiates vitality.",
-  ];
-
-  const slides = [
-    {
-      image: "/images/image-1.avif",
-    },
-    {
-      image: "/images/image-2.avif",
-    },
-    {
-      image: "/images/image-3.avif",
-    },
-    {
-      image: "/images/image-1.avif",
-    },
-    {
-      image: "/images/image-2.avif",
-    },
-    {
-      image: "/images/image-3.avif",
-    },
-  ];
-  const bottleImage = "/images/slider-bottle.avif";
+  const bottleImage = "/images/avif/slider-bottle.avif";
 
   return (
     <section>
@@ -42,7 +19,7 @@ function OurCulture() {
         <div className="px-[21px] md:px-6 xl:px-0 ml-auto max-w-[1200px] 2xl:max-w-[1296px] min-[1600px]:max-w-[1440px] 3xl:max-w-[1680px] flex flex-col lg:flex-row justify-center lg:justify-between items-center text-center lg:text-start">
           <div className="relative lg:w-5/12">
             <Image
-              src="/images/star.png"
+              src="/images/png/star.png"
               alt="star"
               width={68}
               height={108}
@@ -54,7 +31,7 @@ function OurCulture() {
             <h2 className="pt-4 md:pt-5">
               <Text label={description} size="xxl" color="primary" />
             </h2>
-            {details.map((detail, index) => {
+            {OurCultureDetails.map((detail, index) => {
               return (
                 <p key={index}>
                   <Text label={detail} size="sm" color="primary" />

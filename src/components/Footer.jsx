@@ -1,10 +1,8 @@
 import React from "react";
 import { IoIosArrowRoundForward } from "react-icons/io";
-import Icon from "./Icon";
-import { FaFacebookF } from "react-icons/fa";
-import { FaInstagram } from "react-icons/fa6";
-import { RiTwitterXLine } from "react-icons/ri";
-import { FaYoutube } from "react-icons/fa";
+import Icon from "./common/Icon";
+import { FooterData } from "./common/Helper";
+import { socialLinks } from "./common/Helper";
 
 function Footer() {
   const currentYear = new Date().getFullYear();
@@ -14,44 +12,6 @@ function Footer() {
   const Para =
     "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam.";
 
-  const FooterData = [
-    {
-      id: 1,
-      title: "Overview",
-      list: ["Home", "About", "Fungora", "Shop", "Product", "Contact us"],
-    },
-    {
-      id: 2,
-      title: "Resources",
-      list: [
-        " Customer services",
-        "Track my order",
-        "Delivery & Shipping info",
-        "Returns Policy",
-        "Fungora Store",
-        "FAQ’s",
-      ],
-    },
-  ];
-
-  const socialLinks = [
-    {
-      id: 1,
-      icon: <FaFacebookF size={20} />,
-    },
-    {
-      id: 2,
-      icon: <FaInstagram size={20} />,
-    },
-    {
-      id: 3,
-      icon: <RiTwitterXLine size={20} />,
-    },
-    {
-      id: 4,
-      icon: <FaYoutube size={20} />,
-    },
-  ];
   return (
     <footer className="relative bg-tertiary ">
       <div className="relative px-4 py-4 mx-auto overflow-hidden max-w-[1196px] ">

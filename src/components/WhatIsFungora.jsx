@@ -1,46 +1,19 @@
 import React from "react";
-// import { useEffect, useState } from "react";
 import Image from "next/image";
-import Text from "./Text";
-import ActionButton from "./ActionButton";
+import Text from "./common/Text";
+import ActionButton from "./common/ActionButton";
+import { whatIsFungoraDetails } from "./common/Helper";
 
 function WhatIsFungora() {
   const heading = "What is Fungora?";
   const description =
     "This isn't your average supplement. It's a liquid extract from the Lion's Mane mushroom.";
-  const details = [
-    "Our decision to focus on mushroom extracts is rooted in the incredible health benefits they offer. Not only are mushrooms rich in antioxidants, they also have anti-inflammatory properties and are a great source of immune-boosting beta-glucans.",
-    "Additionally, mushrooms contain compounds that can improve cognitive function, enhance energy levels, and promote overall wellness.",
-    "Get your hands on this little bottle of magic. It's got the goodness of Lion's Mane mushrooms condensed into a liquid that's designed to enhance your daily well-being.",
-    "We’re committed to keeping it real with a pure, potent extract that provides a natural boost to both cognitive function and overall health.",
-  ];
-
-  // const [scrollPosition, setScrollPosition] = useState(0);
-
-  // useEffect(() => {
-  //   const handleScroll = () => {
-  //     setScrollPosition(window.scrollY);
-  //   };
-
-  //   window.addEventListener("scroll", handleScroll);
-
-  //   return () => {
-  //     window.removeEventListener("scroll", handleScroll);
-  //   };
-  // }, []);
 
   return (
     <section>
-      <div
-        className="relative pt-20 r bg-tertiary md:pt-24 lg:pt-32 "
-        // bg-cove bg-texture-background bg-blend-multiply
-        // style={{
-        //   transform: `translateY(-${scrollPosition * 1}px)`,
-        //   transition: "transform 0.3s ease-out",
-        // }}
-      >
+      <div className="relative pt-20 r bg-tertiary md:pt-24 lg:pt-32 ">
         <Image
-          src="/images/mushroom-bg.avif"
+          src="/images/avif/mushroom-bg.avif"
           alt="mushroom-img"
           width={1000}
           height={700}
@@ -49,7 +22,7 @@ function WhatIsFungora() {
         <div className="flex flex-col text-center md:text-start px-[21px] md:px-6 xl:px-0 m-auto xl:max-w-[1000px] 2xl:max-w-[1196px]  ">
           <div className="relative flex flex-col gap-4 md:gap-8">
             <Image
-              src="/images/star.png"
+              src="/images/png/star.png"
               alt="star"
               width={68}
               height={10}
@@ -64,13 +37,13 @@ function WhatIsFungora() {
           </div>
           <div className="z-20 flex flex-col items-center justify-center text-center md:flex-row md:items-start md:justify-between md:text-start">
             <div className="md:w-6/12 md:pr-10">
-              {details.slice(0, 2).map((text, index) => (
+              {whatIsFungoraDetails.slice(0, 2).map((text, index) => (
                 <p key={index}>
                   <Text label={text} size="sm" color="primary" />
                 </p>
               ))}
               <Image
-                src="/images/image.avif"
+                src="/images/avif/image.avif"
                 alt="image"
                 width={565}
                 height={696}
@@ -79,14 +52,14 @@ function WhatIsFungora() {
             </div>
             <div className="flex flex-col items-center md:items-end md:w-6/12 ">
               <Image
-                src="/images/girl-image.avif"
+                src="/images/avif/girl-image.avif"
                 alt="image"
                 width={583}
                 height={423}
                 className="py-8 md:pb-0 2xl:pt-12 w-full max-w-[500px] md:max-w-full max-auto md:mx-0"
               />
               <div>
-                {details.slice(2, 4).map((text, index) => (
+                {whatIsFungoraDetails.slice(2, 4).map((text, index) => (
                   <p key={index} className="max-w-[425px]">
                     <Text label={text} size="sm" color="primary" />
                   </p>
@@ -99,7 +72,7 @@ function WhatIsFungora() {
           </div>
         </div>
         <Image
-          src="/images/whatIsFungora.avif"
+          src="/images/avif/whatIsFungora.avif"
           alt="image"
           width={599}
           height={742}

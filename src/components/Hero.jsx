@@ -1,6 +1,6 @@
 import React from "react";
 import Image from "next/image";
-import Text from "./Text";
+import Text from "./common/Text";
 import { useState, useEffect } from "react";
 
 function Hero() {
@@ -26,7 +26,7 @@ function Hero() {
     <section>
       <div className="max-w-[1920px] bg-primary relative  ">
         <Image
-          src="/images/hero-bg-img.png"
+          src="/images/png/hero-bg-img.png"
           alt="hero-bg"
           width={1920}
           height={704}
@@ -61,7 +61,7 @@ function Hero() {
                 .map((_, index) => (
                   <Image
                     key={index}
-                    src="/images/Fungora-img.png"
+                    src="/images/png/Fungora-img.png"
                     alt="Fungora-img"
                     width={2016}
                     height={296}
@@ -80,7 +80,7 @@ function Hero() {
                 .map((_, index) => (
                   <Image
                     key={index}
-                    src="/images/fungora-img-mobile.png"
+                    src="/images/png/fungora-img-mobile.png"
                     alt="Fungora-img"
                     width={2016}
                     height={296}

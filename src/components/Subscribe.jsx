@@ -1,7 +1,7 @@
 import React from "react";
 import Image from "next/image";
-import Text from "./Text";
-import ActionButton from "./ActionButton";
+import Text from "./common/Text";
+import ActionButton from "./common/ActionButton";
 
 function Subscribe() {
   const description = "Subscribe Fungora to get exclusive discounts";
@@ -12,7 +12,7 @@ function Subscribe() {
     <section>
       <div className="relative pt-20 md:pt-24 lg:pt-32 xl:pt-44 bg-tertiary ">
         <Image
-          src="/images/mushroom-bg-3.avif"
+          src="/images/avif/mushroom-bg-3.avif"
           alt="mushroom"
           width={1000}
           height={700}
@@ -22,7 +22,7 @@ function Subscribe() {
         />
         <div className="px-[21px] md:px-6 xl:px-0 m-auto xl:max-w-[1200px] 3xl:max-w-[1460px] flex flex-col md:flex-row justify-center text-center md:text-start md:justify-between items-center">
           <Image
-            src="/images/image-4.avif"
+            src="/images/avif/image-4.avif"
             alt="image"
             width={553}
             height={652}
