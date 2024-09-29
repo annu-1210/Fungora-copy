@@ -13,7 +13,6 @@
   --socialLinksBackground: rgb(51, 0, 91, 0.14);
   --footerBorder: rgb(51, 0, 91, 0.15);
   --starYellowColor: rgba(255, 184, 0, 1);
-
 }
 
 * {
@@ -84,15 +83,24 @@ body {
 @layer components {
   .custom-testimonial-slide {
     max-height: 372px !important;
+    width: 274px !important;
+    max-width: 274px !important;
     margin-right: 20px !important;
     opacity: 1 !important;
 
     @screen sm {
       max-height: 420px !important;
+      margin: 0 auto !important;
+      max-width: 320px !important;
     }
 
     @screen xl {
       max-height: 430px !important;
+      max-width: 320px !important;
+    }
+    @screen 3xl {
+      max-height: 430px !important;
+      max-width: 295px !important;
     }
   }
 }
@@ -101,7 +109,7 @@ body {
   @apply transition-all duration-300 ease-in-out hover:translate-x-1 hover:translate-y-[-3px];
 }
 
-.icon-animation{
+.icon-animation {
   @apply transition-all duration-200 ease-in-out hover:translate-x-0 hover:translate-y-[-5px];
 }
 
@@ -125,8 +133,13 @@ body {
   @apply bg-gradient-to-b from-primary to-quaternary;
 }
 
-.footer-links{
-  @apply text-base font-HelveticaNue !leading-[24px] text-secondary opacity-100  
+.footer-links {
+  @apply text-base font-HelveticaNue !leading-[24px] text-secondary opacity-100;
+}
+
+.custom-next-button.swiper-button-disabled,
+.custom-prev-button.swiper-button-disabled {
+  @apply opacity-40;
 }
 
 @font-face {

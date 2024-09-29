@@ -65,7 +65,7 @@ function Hero() {
                     alt="Fungora-img"
                     width={2016}
                     height={296}
-                    className=" w-full  ease-in-out scale-105 object-cover hidden md:block transform transition-transform duration-500 translate-x-[calc(var(--scrollPosition)*1px)] z-40"
+                    className=" w-full  ease-in-out scale-105 object-cover hidden md:block transform transition-transform duration-500 translate-x-[calc(var(--scrollPosition)*1px)] z-50"
                   />
                 ))}
             </div>
@@ -84,7 +84,7 @@ function Hero() {
                     alt="Fungora-img"
                     width={2016}
                     height={296}
-                    className=" w-full block md:hidden ease-in-out scale-105 object-cover transform transition-transform duration-500 translate-x-[calc(var(--scrollPosition)*1px)] z-40"
+                    className=" w-full block md:hidden ease-in-out scale-105 object-cover transform transition-transform duration-500 translate-x-[calc(var(--scrollPosition)*1px)] z-50"
                   />
                 ))}
             </div>

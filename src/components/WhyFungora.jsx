@@ -24,13 +24,13 @@ function WhyFungora() {
             height={87}
             className="max-w-[20px] md:max-w-[50px] 3xl:max-w-full bottom-[81%] sm:bottom-[21%] absolute left-[60%] sm:left-[-3%]"
           />
-          <Image
+          {/* <Image
             src="/images/png/why-fungora-shell.png"
             alt="shell-img"
             width={66}
             height={66}
             className="absolute z-30 duration-500 ease-in-out -translate-x-1/2 -translate-y-1/2 cursor-pointer top-1/2 left-1/2 md:opacity-0 md:group-hover:opacity-100 max-w-[40px] md:max-w-full"
-          />
+          /> */}
         </div>
         <Image
           src="/images/avif/mushroom-bg-2.avif"

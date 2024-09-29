@@ -4,6 +4,8 @@ import { RiTwitterXLine } from "react-icons/ri";
 import { FaYoutube } from "react-icons/fa";
 import { FaAmazon } from "react-icons/fa6";
 import { FaTiktok } from "react-icons/fa";
+import { PrevIcon } from "@/app/svgs/icons";
+import { NextIcon } from "@/app/svgs/icons";
 
 export const navLinks = [
   {
@@ -119,21 +121,26 @@ export const FooterData = [
   },
 ];
 
+export const navigationButtons = [
+  { icon: <PrevIcon width={50}/>, className: 'custom-prev-button'  },
+  { icon: <NextIcon width={55} />, className: 'custom-next-button max-w-[55px] flex justify-center items-center w-full swiper-button-disabled' },
+];
+
 export const socialLinks = [
   {
     id: 1,
-    icon: <FaFacebookF size={20} />,
+    icon: <FaFacebookF />,
   },
   {
     id: 2,
-    icon: <FaInstagram size={20} />,
+    icon: <FaInstagram />,
   },
   {
     id: 3,
-    icon: <RiTwitterXLine size={20} />,
+    icon: <RiTwitterXLine />,
   },
   {
     id: 4,
-    icon: <FaYoutube size={20} />,
+    icon: <FaYoutube />,
   },
 ];

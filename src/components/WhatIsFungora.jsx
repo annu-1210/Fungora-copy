@@ -65,7 +65,7 @@ function WhatIsFungora() {
                   </p>
                 ))}
                 <div className="inline-block pt-5 md:pt-8 lg:pt-10 xl:pt-14 3xl:pt-16">
-                  <ActionButton label="Shop now" color="primary" size="sm" />
+                  <ActionButton label="Shop now" color="tertiary" size="sm" />
                 </div>
               </div>
             </div>

@@ -23,7 +23,7 @@ function OurCulture() {
               alt="star"
               width={68}
               height={108}
-              className=" max-w-[30px] md:max-w-10 lg:max-w-full absolute right-[17%] md:right-[22%] lg:right-0 xl:right-[11%] top-[-32%] sm:top-[-60%] md:top-[-8%] z-20"
+              className=" max-w-[30px] md:max-w-10 lg:max-w-full absolute right-[17%] md:right-[22%] lg:right-0 xl:right-[11%] top-[-5%] xsm:top-[-32%] sm:top-[-60%] md:top-[-8%] z-20"
             />
             <p>
               <Text label={heading} size="md" color="primary" />
@@ -31,15 +31,17 @@ function OurCulture() {
             <h2 className="pt-4 md:pt-5">
               <Text label={description} size="xxl" color="primary" />
             </h2>
-            {OurCultureDetails.map((detail, index) => {
-              return (
-                <p key={index}>
-                  <Text label={detail} size="sm" color="primary" />
-                </p>
-              );
-            })}
+            <div>
+              {OurCultureDetails.map((detail, index) => {
+                return (
+                  <p key={index}>
+                    <Text label={detail} size="sm" color="primary" />
+                  </p>
+                );
+              })}
+            </div>
             <div className="inline-block pt-5 md:pt-7">
-              <ActionButton label="Shop now" color="primary" size="sm" />
+              <ActionButton label="Shop now" color="tertiary" size="sm" />
             </div>
           </div>
           <div className="w-[98%] sm:w-11/12 lg:w-7/12 3xl:w-7/12 lg:pl-10 3xl:pl-0 pt-5 md:pt-7 lg:pt-0">
