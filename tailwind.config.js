@@ -34,10 +34,6 @@ module.exports = {
         'xsm': '425px',
         '3xl': '1920px',
       },
-      backgroundImage: {
-        'paper-texture': "url('/images/textured_paper.png')",
-        'texture-background': "url('/images/Noise & Texture.png')",
-      },
       translate: {
         'custom': '5.5918px',
       },

@@ -1,5 +1,5 @@
 "use client"
-import FAB from "@/components/FAB";
+import FAB from "@/components/common/FAB";
 import Header from "@/components/Header";
 import Hero from "@/components/Hero";
 import OurCulture from "@/components/OurCulture";
@@ -17,7 +17,7 @@ export default function Home() {
     <section className="w-full">
       <div className="w-full max-w-[1920px] mx-auto relative overflow-hidden">
       <Image
-          src="/images/Noise & Texture.png"
+          src="/images/png/Noise & Texture.png"
           alt="Noise & Texture-img"
           fill={true}
           className="absolute top-0 left-0 bottom-0 right-0 w-full h-full z-[99999] pointer-events-none bg-transparent object-cover"
