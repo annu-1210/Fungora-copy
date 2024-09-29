@@ -53,7 +53,7 @@ function Testimonials() {
                         <GiRoundStar
                           key={index}
                           size={18}
-                          className="duration-300 text-secondary group-hover:text-starYellowColor"
+                          className=" text-secondary group-hover:text-starYellowColor"
                         />
                       ))}
                     </div>
