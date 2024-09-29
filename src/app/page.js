@@ -9,49 +9,19 @@ import WhyFungora from "@/components/WhyFungora";
 import Testimonials from "@/components/Testimonials";
 import GrabNow from "@/components/GrabNow";
 import Footer from "@/components/Footer";
-// import localFont from 'next/font/local';
-
-// const cooper = localFont({
-//   src: [
-//     {
-//       path: './fonts/Cooper-Regular.woff2',
-//       weight: '400',
-//       style: 'normal',
-//     },
-//     {
-//       path: './fonts/Cooper-Medium.woff2',
-//       weight: '500',
-//       style: 'normal',
-//     },
-//     {
-//       path: './fonts/Cooper-SemiBold.woff2',
-//       weight: '600',
-//       style: 'normal',
-//     },
-//     {
-//       path: '/fonts/Cooper-Bold.woff2',
-//       weight: '700',
-//       style: 'normal',
-//     },
-//     {
-//       path: './fonts/Cooper-ExtraBold.woff2',
-//       weight: '800',
-//       style: 'normal',
-//     },
-//     {
-//       path: './fonts/Cooper-Black.woff2',
-//       weight: '900',
-//       style: 'normal',
-//     },
-//   ],
-//   variable: '--font-cooper',
-// });
+import Image from "next/image";
 
 export default function Home() {
 
   return (
     <section className="w-full">
       <div className="w-full max-w-[1920px] mx-auto relative overflow-hidden">
+      <Image
+          src="/images/Noise & Texture.png"
+          alt="Noise & Texture-img"
+          fill={true}
+          className="absolute top-0 left-0 bottom-0 right-0 w-full h-full z-[99999] pointer-events-none bg-transparent object-cover"
+        />
         <div className="hidden lg:flex fixed 3xl:absolute right-3 sm:right-5 top-[50vh] translate-y-[-50%] z-50"><FAB /></div>
         <Header />
         <Hero />

@@ -8,7 +8,7 @@ function GrabNow() {
   return (
     <section>
       <div className="relative">
-        <div className="z-10 px-4 pt-24 pb-20 overflow-hidden bg-cover md:overflow-visible sm:py-32 bg-tertiary bg-texture-background bg-blend-multiply">
+        <div className="z-10 px-4 pt-24 pb-20 overflow-hidden md:overflow-visible sm:py-32 bg-tertiary ">
           <div className="max-w-[1196px] w-full bg-gradient-to-b from-purplePrimary to-purpleSecondary mx-auto rounded-[24px] px-5 sm:px-20 lg:px-32 py-10 lg:py-24 flex flex-col lg:flex-row gap-6 h-[420px] lg:h-full lg:justify-between  items-center relative z-20">
             <Image
               src="/images/star.png"
@@ -63,8 +63,9 @@ function GrabNow() {
         <Image
           src="/images/fungora-img-mobile2.png"
           alt="fungora"
-          fill={true}
-          className="block md:hidden absolute top-[54px] sm:top-[89px] md:top-[50px] lg:top-0 w-full"
+          width={2016}
+          height={296}
+          className="block z-0 md:hidden absolute top-[54px] sm:top-[89px] md:top-[50px] lg:top-0 w-full"
         />
       </div>
     </section>

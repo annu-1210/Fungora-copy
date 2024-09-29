@@ -10,7 +10,10 @@
   --quaternaryColor: rgba(255, 225, 72, 0);
   --quinaryColor: rgba(237, 221, 193, 1);
   --fabLinksBackground: rgb(51, 0, 91, 0.05);
+  --socialLinksBackground: rgb(51, 0, 91, 0.14);
   --footerBorder: rgb(51, 0, 91, 0.15);
+  --starYellowColor: rgba(255, 184, 0, 1);
+
 }
 
 * {
@@ -98,6 +101,10 @@ body {
   @apply transition-all duration-300 ease-in-out hover:translate-x-1 hover:translate-y-[-3px];
 }
 
+.icon-animation{
+  @apply transition-all duration-200 ease-in-out hover:translate-x-0 hover:translate-y-[-5px];
+}
+
 .nav-links {
   @apply text-[26px] lg:text-base xl:text-lg text-tertiary lg:text-secondary font-CooperExtrabold hover:scale-105 transition-all ease-in-out duration-300;
 }
@@ -119,7 +126,7 @@ body {
 }
 
 .footer-links{
-  @apply text-base font-HelveticaNue !leading-[24px] text-secondary opacity-100 md:opacity-80 hover:opacity-100 
+  @apply text-base font-HelveticaNue !leading-[24px] text-secondary opacity-100  
 }
 
 @font-face {

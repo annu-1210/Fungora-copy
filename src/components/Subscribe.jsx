@@ -10,7 +10,7 @@ function Subscribe() {
 
   return (
     <section>
-      <div className="relative pt-20 bg-cover md:pt-24 lg:pt-32 xl:pt-44 bg-tertiary bg-texture-background bg-blend-multiply">
+      <div className="relative pt-20 md:pt-24 lg:pt-32 xl:pt-44 bg-tertiary ">
         <Image
           src="/images/mushroom-bg-3.avif"
           alt="mushroom"
@@ -30,10 +30,10 @@ function Subscribe() {
           />
           <div className="order-1 md:w-6/12 lg:w-7/12 md:order-2">
             <h2>
-              <Text label={description} size="xxl" color="primary"/>
+              <Text label={description} size="xxl" color="primary" />
             </h2>
             <p className="max-w-[677px]">
-              <Text label={detail} size="sm" color="primary"/>
+              <Text label={detail} size="sm" color="primary" />
             </p>
             <form>
               <div className="flex justify-between border border-secondary rounded-full pl-3 pr-1.5 md:px-4 py-1.5 lg:py-3.5 w-full max-w-[633px] mt-4 md:mt-6 xl:mt-[35px]">

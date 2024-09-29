@@ -1,10 +1,10 @@
-
 import React, { useState } from "react";
 import Image from "next/image";
 import ActionButton from "./ActionButton";
-import { CiMenuFries } from "react-icons/ci";
 import { RxCross2 } from "react-icons/rx";
 import FAB from "./FAB";
+import { FungoraLogo } from "@/assets/svgs";
+import { MenuIcon } from "@/assets/svgs";
 
 function Header() {
   const [isOpen, setOpen] = useState(false);
@@ -37,14 +37,8 @@ function Header() {
         className="w-full max-w-[1920px] top-0 lg:top-[-70%] left-0 absolute z-0"
       />
       <div className="relative z-20 flex items-center justify-between  mx-auto max-w-[1440px]">
-        <a href="/" className="flex items-center gap-1">
-          <Image
-            src="/images/fungora-logo.png"
-            alt="fungora-logo"
-            width={38}
-            height={42}
-          />
-          <p className="text-xl font-medium text-secondary">FUNGORA</p>
+        <a href="/" className="flex items-center gap-1 w-[152px] h-[42px]">
+          <FungoraLogo width={152} height={42} />
         </a>
         <div className="items-center hidden gap-8 lg:flex">
           {navLinks.map((item) => {
@@ -64,7 +58,11 @@ function Header() {
             <ActionButton label="Shop now" color="primary" size="sm" />
           </div>
           <div className="flex lg:hidden" onClick={toggleNavbar}>
-            {!isOpen ? <CiMenuFries size={30} /> : <RxCross2 size={20} />}
+            {!isOpen ? (
+              <MenuIcon width={30} height={10} />
+            ) : (
+              <RxCross2 size={20} />
+            )}
           </div>
         </div>
       </div>

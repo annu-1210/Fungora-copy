@@ -1,4 +1,5 @@
 import React from "react";
+// import { useEffect, useState } from "react";
 import Image from "next/image";
 import Text from "./Text";
 import ActionButton from "./ActionButton";
@@ -14,9 +15,30 @@ function WhatIsFungora() {
     "We’re committed to keeping it real with a pure, potent extract that provides a natural boost to both cognitive function and overall health.",
   ];
 
+  // const [scrollPosition, setScrollPosition] = useState(0);
+
+  // useEffect(() => {
+  //   const handleScroll = () => {
+  //     setScrollPosition(window.scrollY);
+  //   };
+
+  //   window.addEventListener("scroll", handleScroll);
+
+  //   return () => {
+  //     window.removeEventListener("scroll", handleScroll);
+  //   };
+  // }, []);
+
   return (
     <section>
-      <div className="relative pt-20 bg-cover bg-tertiary md:pt-24 lg:pt-32 bg-texture-background bg-blend-multiply ">
+      <div
+        className="relative pt-20 r bg-tertiary md:pt-24 lg:pt-32 "
+        // bg-cove bg-texture-background bg-blend-multiply
+        // style={{
+        //   transform: `translateY(-${scrollPosition * 1}px)`,
+        //   transition: "transform 0.3s ease-out",
+        // }}
+      >
         <Image
           src="/images/mushroom-bg.avif"
           alt="mushroom-img"
@@ -34,17 +56,17 @@ function WhatIsFungora() {
               className="max-w-[30px] md:max-w-10 lg:max-w-full absolute right-[50px] md:right-[20%] lg:right-[29%] xl:right-[12%] 2xl:right-[26%] 3xl:right-[10%] top-[-41%] sm:top-[-60%] md:top-0"
             />
             <p>
-              <Text label={heading} size="md" color="primary"/>
+              <Text label={heading} size="md" color="primary" />
             </p>
             <h2>
-              <Text label={description} size="xxl" color="primary"/>
+              <Text label={description} size="xxl" color="primary" />
             </h2>
           </div>
           <div className="z-20 flex flex-col items-center justify-center text-center md:flex-row md:items-start md:justify-between md:text-start">
             <div className="md:w-6/12 md:pr-10">
               {details.slice(0, 2).map((text, index) => (
                 <p key={index}>
-                  <Text label={text} size="sm" color="primary"/>
+                  <Text label={text} size="sm" color="primary" />
                 </p>
               ))}
               <Image
@@ -66,7 +88,7 @@ function WhatIsFungora() {
               <div>
                 {details.slice(2, 4).map((text, index) => (
                   <p key={index} className="max-w-[425px]">
-                    <Text label={text} size="sm" color="primary"/>
+                    <Text label={text} size="sm" color="primary" />
                   </p>
                 ))}
                 <div className="inline-block pt-5 md:pt-8 lg:pt-10 xl:pt-14 3xl:pt-16">

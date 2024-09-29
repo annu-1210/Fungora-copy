@@ -1,5 +1,10 @@
 import React from "react";
 import { IoIosArrowRoundForward } from "react-icons/io";
+import Icon from "./Icon";
+import { FaFacebookF } from "react-icons/fa";
+import { FaInstagram } from "react-icons/fa6";
+import { RiTwitterXLine } from "react-icons/ri";
+import { FaYoutube } from "react-icons/fa";
 
 function Footer() {
   const currentYear = new Date().getFullYear();
@@ -28,8 +33,27 @@ function Footer() {
       ],
     },
   ];
+
+  const socialLinks = [
+    {
+      id: 1,
+      icon: <FaFacebookF size={20} />,
+    },
+    {
+      id: 2,
+      icon: <FaInstagram size={20} />,
+    },
+    {
+      id: 3,
+      icon: <RiTwitterXLine size={20} />,
+    },
+    {
+      id: 4,
+      icon: <FaYoutube size={20} />,
+    },
+  ];
   return (
-    <footer className="relative bg-cover bg-tertiary bg-texture-background bg-blend-multiply">
+    <footer className="relative bg-tertiary ">
       <div className="relative px-4 py-4 mx-auto overflow-hidden max-w-[1196px] ">
         <div className="flex flex-wrap justify-between gap-4 md:justify-center lg:justify-between">
           <div className="flex justify-between w-full max-w-[400px] lg:max-w-auto gap-20">
@@ -40,7 +64,11 @@ function Footer() {
                 </h3>
                 <div className="flex flex-col gap-1">
                   {data.list.map((item, index) => (
-                    <a key={index} href="/" className="transition-all duration-300 ease-in-out footer-links hover:scale-105 after:duration-300 ">
+                    <a
+                      key={index}
+                      href="/"
+                      className="transition-all duration-300 ease-in-out footer-links hover:scale-105 after:duration-300 md:opacity-80 hover:opacity-100"
+                    >
                       {item}
                     </a>
                   ))}
@@ -60,11 +88,22 @@ function Footer() {
                 className="w-full pr-3 !bg-transparent text-base md:text-lg lg:text-xl text-secondary font-HelveticaNue placeholder:text-base placeholder:md:text-lg placeholder:lg:text-xl placeholder:text-secondary placeholder:font-HelveticaNue outline-none"
               />
               <button className="" type="submit">
-                <IoIosArrowRoundForward size={20} />
+                <IoIosArrowRoundForward size={30} />
               </button>
             </form>
             <p className="mt-4 footer-links">{Para}</p>
-            <div className="flex items-center gap-6 mt-4">buttons</div>
+            <div className="flex items-center gap-6 mt-4">
+              {socialLinks.map((item) => {
+                return (
+                  <Icon
+                    key={item.id}
+                    className=" text-secondary bg-socialLinksBackground"
+                  >
+                    {item.icon}
+                  </Icon>
+                );
+              })}
+            </div>
           </div>
         </div>
         <div className="flex flex-col justify-center pt-4 pb-1 mt-6 border-t xsm:flex-row xsm:justify-between md:pt-4 md:mt-14 footer-links border-footerBorder">

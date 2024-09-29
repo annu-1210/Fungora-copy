@@ -3,9 +3,8 @@ import Text from "./Text";
 import ActionButton from "./ActionButton";
 import Image from "next/image";
 import { Swiper, SwiperSlide } from "swiper/react";
-import "swiper/css";
+import "swiper/swiper-bundle.css";
 import "swiper/css/autoplay";
-import { Autoplay } from "swiper/modules";
 
 function OurCulture() {
   const heading = "Our culture";
@@ -39,7 +38,7 @@ function OurCulture() {
 
   return (
     <section>
-      <div className="relative z-20 pt-8 bg-cover md:py-20 lg:py-28 xl:py-36 bg-primary bg-texture-background bg-blend-multiply">
+      <div className="relative z-20 pt-8 md:py-20 lg:py-28 xl:py-36 bg-primary ">
         <div className="px-[21px] md:px-6 xl:px-0 ml-auto max-w-[1200px] 2xl:max-w-[1296px] min-[1600px]:max-w-[1440px] 3xl:max-w-[1680px] flex flex-col lg:flex-row justify-center lg:justify-between items-center text-center lg:text-start">
           <div className="relative lg:w-5/12">
             <Image
@@ -50,15 +49,15 @@ function OurCulture() {
               className=" max-w-[30px] md:max-w-10 lg:max-w-full absolute right-[17%] md:right-[22%] lg:right-0 xl:right-[11%] top-[-32%] sm:top-[-60%] md:top-[-8%] z-20"
             />
             <p>
-              <Text label={heading} size="md" color="primary"/>
+              <Text label={heading} size="md" color="primary" />
             </p>
             <h2 className="pt-4 md:pt-5">
-              <Text label={description} size="xxl" color="primary"/>
+              <Text label={description} size="xxl" color="primary" />
             </h2>
             {details.map((detail, index) => {
               return (
                 <p key={index}>
-                  <Text label={detail} size="sm" color="primary"/>
+                  <Text label={detail} size="sm" color="primary" />
                 </p>
               );
             })}
@@ -69,15 +68,12 @@ function OurCulture() {
           <div className="w-[98%] sm:w-11/12 lg:w-7/12 3xl:w-7/12 lg:pl-10 3xl:pl-0 pt-5 md:pt-7 lg:pt-0">
             <Swiper
               loop={true}
-              // initialSlide={1}
               slidesPerView={"auto"}
               spaceBetween={30}
               autoplay={{
-                delay: 2500,
+                delay: 3000,
                 disableOnInteraction: false,
               }}
-              modules={Autoplay}
-              className="mySwiper"
             >
               {slides.map((slide, index) => (
                 <SwiperSlide key={index} className="custom-swiper-slide">
