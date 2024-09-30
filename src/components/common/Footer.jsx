@@ -1,8 +1,8 @@
 import React from "react";
 import { IoIosArrowRoundForward } from "react-icons/io";
-import Icon from "./common/Icon";
-import { FooterData } from "./common/Helper";
-import { socialLinks } from "./common/Helper";
+import Icon from "./Icon";
+import { FooterData } from "./Helper";
+import { socialLinks } from "./Helper";
 
 function Footer() {
   const currentYear = new Date().getFullYear();
@@ -57,7 +57,7 @@ function Footer() {
                 return (
                   <Icon
                     key={item.id}
-                    className=" text-secondary bg-socialLinksBackground"
+                    className=" text-secondary bg-SocialLinks-Background"
                   >
                     {item.icon}
                   </Icon>
@@ -66,7 +66,7 @@ function Footer() {
             </div>
           </div>
         </div>
-        <div className="flex flex-col justify-center pt-4 pb-1 mt-6 border-t xsm:flex-row xsm:justify-between md:pt-4 md:mt-14 footer-links border-footerBorder">
+        <div className="flex flex-col justify-center pt-4 pb-1 mt-6 border-t xsm:flex-row xsm:justify-between md:pt-4 md:mt-14 footer-links border-footer-Border">
           <p>&copy; {currentYear} Fungora, All rights reserved.</p>
           <p>Disclaimer • Terms of use</p>
         </div>

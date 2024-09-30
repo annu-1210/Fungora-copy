@@ -1,11 +1,11 @@
 import React, { useState } from "react";
 import Image from "next/image";
-import ActionButton from "./common/ActionButton";
+import ActionButton from "./ActionButton";
 import { RxCross2 } from "react-icons/rx";
 import { FungoraLogo } from "@/app/svgs/icons";
 import { MenuIcon } from "@/app/svgs/icons";
-import { navLinks } from "./common/Helper";
-import MobileHeader from "./MobileHeader";
+import { navLinks } from "./Helper";
+import HeaderMobile from "./HeaderMobile";
 
 function Header() {
   const [isOpen, setOpen] = useState(false);
@@ -33,7 +33,7 @@ function Header() {
               <a
                 key={item.name}
                 href="/"
-                className="nav-links underline-animation"
+                className="nav-links underline-animation hover:after:animate-underline-scale"
               >
                 {item.name}
               </a>
@@ -53,7 +53,7 @@ function Header() {
           </div>
         </div>
       </div>
-      {isOpen && <MobileHeader />}
+      {isOpen && <HeaderMobile />}
     </nav>
   );
 }

@@ -2,27 +2,8 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --background: rgb(255 239 211);
-  --primaryColor: rgba(252, 235, 147, 1);
-  --secondaryColor: rgba(51, 0, 91, 1);
-  --tertiaryColor: rgba(255, 239, 211, 1);
-  --quaternaryColor: rgba(255, 225, 72, 0);
-  --quinaryColor: rgba(237, 221, 193, 1);
-  --fabLinksBackground: rgb(51, 0, 91, 0.05);
-  --socialLinksBackground: rgb(51, 0, 91, 0.14);
-  --footerBorder: rgb(51, 0, 91, 0.15);
-  --starYellowColor: rgba(255, 184, 0, 1);
-}
-
-* {
-  padding: 0;
-  margin: 0;
-  box-sizing: border-box;
-}
-
 body {
-  background-color: var(--background);
+  background-color: rgb(255 239 211);
 }
 
 @layer components {
@@ -122,16 +103,13 @@ body {
 }
 
 .underline-animation::after {
-  @apply dark:bg-white border-secondary  content-[''] rounded-full absolute w-full bottom-[-2px] scale-x-0 border-[1.6px] duration-300 left-0 origin-left transition-all ease-in-out;
+  @apply dark:bg-white border-secondary  content-[''] rounded-full scale-x-0 absolute w-full bottom-[-2px] border-[1.6px] duration-300 left-0 origin-left transition-all ease-in-out;
 }
 
 .underline-animation:hover::after {
   @apply scale-x-100;
 }
 
-.custom-gradient {
-  @apply bg-gradient-to-b from-primary to-quaternary;
-}
 
 .footer-links {
   @apply text-base font-HelveticaNue !leading-[24px] text-secondary opacity-100;

@@ -10,7 +10,7 @@ function FAB() {
         return (
           <Icon
             key={item.id}
-            className="text-white bg-secondary lg:bg-FabLinksBackground lg:text-secondary"
+            className="text-white bg-secondary lg:bg-FabLinks-Background lg:text-secondary"
           >
             {item.icon}
           </Icon>

@@ -2,12 +2,20 @@ import React from "react";
 import Image from "next/image";
 import Text from "./common/Text";
 import ActionButton from "./common/ActionButton";
-import { whatIsFungoraDetails } from "./common/Helper";
 
 function WhatIsFungora() {
   const heading = "What is Fungora?";
   const description =
     "This isn't your average supplement. It's a liquid extract from the Lion's Mane mushroom.";
+
+  const firstPara =
+    "Our decision to focus on mushroom extracts is rooted in the incredible health benefits they offer. Not only are mushrooms rich in antioxidants, they also have anti-inflammatory properties and are a great source of immune-boosting beta-glucans.";
+  const secondPara =
+    "Additionally, mushrooms contain compounds that can improve cognitive function, enhance energy levels, and promote overall wellness.";
+  const thirdPara =
+    "Get your hands on this little bottle of magic. It's got the goodness of Lion's Mane mushrooms condensed into a liquid that's designed to enhance your daily well-being.";
+  const fourthPara =
+    "We’re committed to keeping it real with a pure, potent extract that provides a natural boost to both cognitive function and overall health.";
 
   return (
     <section>
@@ -37,11 +45,12 @@ function WhatIsFungora() {
           </div>
           <div className="z-20 flex flex-col items-center justify-center text-center md:flex-row md:items-start md:justify-between md:text-start">
             <div className="md:w-6/12 md:pr-10">
-              {whatIsFungoraDetails.slice(0, 2).map((text, index) => (
-                <p key={index}>
-                  <Text label={text} size="sm" color="primary" />
-                </p>
-              ))}
+              <p>
+                <Text label={firstPara} size="sm" color="primary" />
+              </p>
+              <p>
+                <Text label={secondPara} size="sm" color="primary" />
+              </p>
               <Image
                 src="/images/avif/image.avif"
                 alt="image"
@@ -59,11 +68,12 @@ function WhatIsFungora() {
                 className="py-8 md:pb-0 2xl:pt-12 w-full max-w-[500px] md:max-w-full max-auto md:mx-0"
               />
               <div>
-                {whatIsFungoraDetails.slice(2, 4).map((text, index) => (
-                  <p key={index} className="max-w-[425px]">
-                    <Text label={text} size="sm" color="primary" />
-                  </p>
-                ))}
+                <p className="max-w-[425px]">
+                  <Text label={thirdPara} size="sm" color="primary" />
+                </p>
+                <p className="max-w-[425px]">
+                  <Text label={fourthPara} size="sm" color="primary" />
+                </p>
                 <div className="inline-block pt-5 md:pt-8 lg:pt-10 xl:pt-14 3xl:pt-16">
                   <ActionButton label="Shop now" color="tertiary" size="sm" />
                 </div>

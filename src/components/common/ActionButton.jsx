@@ -7,10 +7,10 @@ const button = tv(
     variants: {
       color: {
         primary:
-          "bg-gradient-to-b from-purplePrimary to-purpleSecondary text-primary",
+          "bg-custom-gradient text-primary",
         secondary: "bg-tertiary text-secondary ",
         tertiary:
-          "bg-gradient-to-b from-purplePrimary to-purpleSecondary text-tertiary",
+          "bg-custom-gradient text-tertiary",
       },
       size: {
         sm: "w-[189px] h-[49px] sm:w-[138px] px-[23px] py-[11px] text-lg button-animation font-CooperBlack",

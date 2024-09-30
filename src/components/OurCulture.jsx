@@ -3,15 +3,15 @@ import Text from "./common/Text";
 import ActionButton from "./common/ActionButton";
 import Image from "next/image";
 import { OurCultureDetails } from "./common/Helper";
-import { Swiper, SwiperSlide } from "swiper/react";
-import "swiper/swiper-bundle.css";
-import "swiper/css/autoplay";
-import { slides } from "./common/Helper";
+import OurCultureSlider from "./OurCultureSlider";
 
 function OurCulture() {
   const heading = "Our culture";
   const description = "Discover the Fungora way";
-  const bottleImage = "/images/avif/slider-bottle.avif";
+  const firstPara =
+    "Imagine a place where mushrooms are more than just a pizza topping. That's us! Central to our philosophy is the commitment to your health and the pursuit of enhancing it through our carefully crafted extract.";
+  const secondPara =
+    "Join our community and immerse yourself in the Fungora way, fostering a life that's not only balanced and enriched but radiates vitality.";
 
   return (
     <section>
@@ -32,50 +32,18 @@ function OurCulture() {
               <Text label={description} size="xxl" color="primary" />
             </h2>
             <div>
-              {OurCultureDetails.map((detail, index) => {
-                return (
-                  <p key={index}>
-                    <Text label={detail} size="sm" color="primary" />
-                  </p>
-                );
-              })}
+              <p>
+                <Text label={firstPara} size="sm" color="primary" />
+              </p>
+              <p>
+                <Text label={secondPara} size="sm" color="primary" />
+              </p>
             </div>
             <div className="inline-block pt-5 md:pt-7">
               <ActionButton label="Shop now" color="tertiary" size="sm" />
             </div>
           </div>
-          <div className="w-[98%] sm:w-11/12 lg:w-7/12 3xl:w-7/12 lg:pl-10 3xl:pl-0 pt-5 md:pt-7 lg:pt-0">
-            <Swiper
-              loop={true}
-              slidesPerView={"auto"}
-              spaceBetween={30}
-              autoplay={{
-                delay: 3000,
-                disableOnInteraction: false,
-              }}
-            >
-              {slides.map((slide, index) => (
-                <SwiperSlide key={index} className="custom-swiper-slide">
-                  <div className="relative mt-20">
-                    <Image
-                      src={bottleImage}
-                      alt="image"
-                      width={199}
-                      height={616}
-                      className=" absolute z-10 w-full max-w-[150px] lg:max-w-[160px] h-[435px] lg:h-[500px] min-[1600px]:max-w-[190px] min-[1600px]:h-[590px] left-1/2 -translate-x-1/2 top-[-10%]"
-                    />
-                    <Image
-                      src={slide.image}
-                      alt={`Slide ${index + 1}`}
-                      width={398}
-                      height={694}
-                      className="relative z-0 w-full "
-                    />
-                  </div>
-                </SwiperSlide>
-              ))}
-            </Swiper>
-          </div>
+          <OurCultureSlider />
         </div>
       </div>
     </section>

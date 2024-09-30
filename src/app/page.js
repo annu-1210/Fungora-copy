@@ -1,6 +1,6 @@
 "use client"
 import FAB from "@/components/common/FAB";
-import Header from "@/components/Header";
+import Header from "@/components/common/Header";
 import Hero from "@/components/Hero";
 import OurCulture from "@/components/OurCulture";
 import Subscribe from "@/components/Subscribe";
@@ -8,7 +8,7 @@ import WhatIsFungora from "@/components/WhatIsFungora";
 import WhyFungora from "@/components/WhyFungora";
 import Testimonials from "@/components/Testimonials";
 import GrabNow from "@/components/GrabNow";
-import Footer from "@/components/Footer";
+import Footer from "@/components/common/Footer";
 import Image from "next/image";
 
 export default function Home() {

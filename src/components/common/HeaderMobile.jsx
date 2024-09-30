@@ -1,14 +1,14 @@
 import React from "react";
-import FAB from "./common/FAB";
-import { navLinks } from "./common/Helper";
+import FAB from "./FAB";
+import { navLinks } from "./Helper";
 import Image from "next/image";
-import ActionButton from "./common/ActionButton";
+import ActionButton from "./ActionButton";
 
-function MobileHeader() {
+function HeaderMobile() {
   return (
     <>
       <aside className="z-50 flex justify-start w-full py-4 lg:hidden">
-        <div className="flex gap-4 h-[calc(100vh-102px)] sm:h-[calc(100vh-110px)] backdrop-blur-sm flex-col items-center justify-between w-full rounded-[16px] p-4 bg-gradient-to-b from-purplePrimary to-purpleSecondary relative">
+        <div className="flex gap-4 h-[calc(100vh-102px)] sm:h-[calc(100vh-110px)] backdrop-blur-sm flex-col items-center justify-between w-full rounded-[16px] p-4 bg-custom-gradient relative">
           <Image
             src="/images/png/star.png"
             alt="star"
@@ -40,4 +40,4 @@ function MobileHeader() {
   );
 }
 
-export default MobileHeader;
+export default HeaderMobile;
