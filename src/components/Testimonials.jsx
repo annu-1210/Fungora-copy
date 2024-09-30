@@ -16,7 +16,7 @@ function Testimonials() {
             </h2>
             <div className="hidden lg:flex absolute justify-start mt-12 gap-6 h-[20px] items-center w-full  z-10  left-0 ">
               <button className="custom-prev-button">
-                <PrevIcon width={50} />
+                {/* <PrevIcon width={50} /> */}
               </button>
               <button className="custom-next-button max-w-[55px] flex justify-center items-center w-full swiper-button-disabled">
                 <NextIcon width={55} />
