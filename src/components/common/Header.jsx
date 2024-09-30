@@ -2,8 +2,8 @@ import React, { useState } from "react";
 import Image from "next/image";
 import ActionButton from "./ActionButton";
 import { RxCross2 } from "react-icons/rx";
-import { FungoraLogo } from "@/app/svgs/icons";
-import { MenuIcon } from "@/app/svgs/icons";
+import  FungoraLogo  from "../../app/svgs/logo.svg";
+import  MenuIcon  from "../../app/svgs/menu.svg";
 import { navLinks } from "./Helper";
 import HeaderMobile from "./HeaderMobile";
 

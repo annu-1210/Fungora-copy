@@ -23,8 +23,6 @@ module.exports = {
         tertiary: "rgba(255, 239, 211, 1)",
         quaternary: "rgba(255, 225, 72, 0)",
         quinary: "rgba(237, 221, 193, 1)",
-        // purplePrimary: "#2d0051",
-        // purpleSecondary: "rgba(51, 0, 91, 0.87)",
         "FabLinks-Background": "rgb(51, 0, 91, 0.05)",
         "SocialLinks-Background": "rgb(51, 0, 91, 0.14)",
         "footer-Border": "rgb(51, 0, 91, 0.15)",
