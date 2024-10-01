@@ -15,14 +15,14 @@ function GrabNow() {
               alt="star"
               width={68}
               height={108}
-              className=" absolute left-[71%] xs:left-[60%] lg:left-[64%] top-[30%] xs:top-9 md:top-6 z-40"
+              className=" absolute left-[71%] xsm:left-[60%] lg:left-[64%] top-[30%] xsm:top-9 md:top-9 z-40 max-w-[30px] md:max-w-10 lg:max-w-full"
             />
             <Image
               src="/images/png/star.png"
               alt="star"
               width={68}
               height={108}
-              className=" absolute left-[47%] xs:left-[42%]  lg:left-[56%] md:bottom-[-34%] bottom-[-84px] lg:bottom-[-40%] z-40"
+              className=" absolute left-[47%] xsm:left-[42%]  lg:left-[56%] md:bottom-[-34%] bottom-[-84px] lg:bottom-[-40%] z-40 max-w-[30px] md:max-w-10 lg:max-w-full"
             />
             <Image
               src="/images/hero-bottle-img.webp"
@@ -37,7 +37,7 @@ function GrabNow() {
                 alt="mushroom"
                 width={50}
                 height={60}
-                className=" absolute w-[50px] lg:w-[78px] lg:right-[7%] right-[-10%] sm:right-[-5%] top-[21%] lg:top-[12%] z-40"
+                className=" absolute w-[50px] lg:w-[78px] right-[-10%] sm:right-[-5%] lg:right-[6%] top-[21%] lg:top-[12%] z-40"
               />
               <p className="text-center text-tertiary font-HelveticaNue font-normal leading-7 text-lg xl:text-xl max-w-[530px] xl:max-w-[677px] mx-auto md:mx-0 lg:text-start">
                 {para}

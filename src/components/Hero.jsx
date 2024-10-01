@@ -30,7 +30,7 @@ function Hero() {
           alt="hero-bg"
           width={1920}
           height={704}
-          className="w-full  absolute top-[-15%] sm:top-0 left-0 bg-cover z-10 object-cover pointer-events-none h-[348px] md:h-[704px]"
+          className="w-full absolute top-[-15%] sm:top-0 left-0 bg-cover z-10 object-cover pointer-events-none h-[348px] md:h-[704px]"
         />
         <div className="pt-[188px] lg:pt-[180px] 3xl:pt-[221px] relative z-3x0">
           <h2
@@ -50,12 +50,7 @@ function Hero() {
               height={666}
               className="max-w-[170px] z-0 sm:max-w-[180px] 3xl:max-w-[214px] transition-all ease-in-out duration-500 "
             />
-            <div
-              className="flex translate-x-[0%]  gap-36 flex-nowrap absolute justify-center h-full overflow-hidden  z-40 w-full items-center"
-              style={{
-                transform: `translateX(${scrollPosition * 1}px)`,
-              }}
-            >
+            <div className="flex translate-x-[0%]  gap-36 flex-nowrap absolute justify-center h-full overflow-hidden  z-40 w-full items-center">
               {Array(3)
                 .fill()
                 .map((_, index) => (
@@ -65,16 +60,14 @@ function Hero() {
                     alt="Fungora-img"
                     width={2016}
                     height={296}
-                    className=" w-full  ease-in-out scale-105 object-cover hidden md:block transform transition-transform duration-500 translate-x-[calc(var(--scrollPosition)*1px)] z-50"
+                    style={{
+                      transform: `translateX(${scrollPosition * 2}px)`,
+                    }}
+                    className="z-50 hidden object-cover w-full transition-transform duration-500 ease-in-out transform scale-105 md:block"
                   />
                 ))}
             </div>
-            <div
-              className="absolute z-40 flex justify-center w-full gap-8 overflow-hidden flex-nowrap"
-              style={{
-                transform: `translateX(${scrollPosition * 1}px)`,
-              }}
-            >
+            <div className="absolute z-40 flex justify-center w-full gap-8 overflow-hidden flex-nowrap">
               {Array(3)
                 .fill()
                 .map((_, index) => (
@@ -84,7 +77,10 @@ function Hero() {
                     alt="Fungora-img"
                     width={2016}
                     height={296}
-                    className=" w-full block md:hidden ease-in-out scale-105 object-cover transform transition-transform duration-500 translate-x-[calc(var(--scrollPosition)*1px)] z-50"
+                    style={{
+                      transform: `translateX(${scrollPosition * 2}px)`,
+                    }}
+                    className="z-50 block object-cover w-full transition-transform duration-500 ease-in-out transform scale-105  md:hidden"
                   />
                 ))}
             </div>

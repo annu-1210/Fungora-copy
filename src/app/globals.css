@@ -63,15 +63,16 @@ body {
 
 @layer components {
   .custom-testimonial-slide {
-    max-height: 372px !important;
-    width: 274px !important;
+    /* height: 372px !important; */
+    max-height: 380px !important;
+    /* width: 274px !important; */
     max-width: 274px !important;
-    margin-right: 20px !important;
+    /* margin-right: 20px !important; */
     opacity: 1 !important;
 
     @screen sm {
       max-height: 420px !important;
-      margin: 0 auto !important;
+      /* margin: 0 auto !important; */
       max-width: 320px !important;
     }
 
@@ -118,6 +119,14 @@ body {
 .custom-next-button.swiper-button-disabled,
 .custom-prev-button.swiper-button-disabled {
   @apply opacity-40;
+}
+
+.custom-testimonial-wrapper{
+  @apply !flex !gap-5
+}
+
+.swiper-pagination-bullet-active {
+  @apply !bg-secondary
 }
 
 @font-face {

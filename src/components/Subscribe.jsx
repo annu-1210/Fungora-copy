@@ -16,7 +16,7 @@ function Subscribe() {
           alt="mushroom"
           width={1000}
           height={700}
-          className=" bottom-[-8%] md:bottom-[-80%] xl:bottom-[-75%] 3xl:bottom-[-80%] left-0
+          className=" bottom-[-8%] md:bottom-[-80%] xl:bottom-[-75%] 3xl:bottom-[-100%] left-0
         z-0 absolute md:max-w-[500px] lg:max-w-[700px] xl:max-w-[750px]
         2xl:max-w-[900px] 3xl:max-w-full"
         />
