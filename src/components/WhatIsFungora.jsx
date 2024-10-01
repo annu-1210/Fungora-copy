@@ -18,7 +18,7 @@ function WhatIsFungora() {
     "We’re committed to keeping it real with a pure, potent extract that provides a natural boost to both cognitive function and overall health.";
 
   return (
-    <section>
+    <section id="whatIsFungora">
       <div className="relative pt-20 r bg-tertiary md:pt-24 lg:pt-32 ">
         <Image
           src="/images/avif/mushroom-bg.avif"

@@ -55,7 +55,7 @@ function GrabNow() {
                 />
               </h2>
             </div>
-            <div className="z-40">
+            <div className="z-50">
               <ActionButton label="Shop now" color="secondary" size="md" />
             </div>
           </div>

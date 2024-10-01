@@ -122,11 +122,16 @@ body {
 }
 
 .custom-testimonial-wrapper{
-  @apply !flex !gap-5
+  @apply !flex !gap-5 !h-[460px]
+}
+
+.swiper-pagination-bullets.swiper-pagination-bullet, 
+.swiper-pagination-horizontal.swiper-pagination-bullets.swiper-pagination-bullet{
+  @apply !w-[14px] !h-[14px];
 }
 
 .swiper-pagination-bullet-active {
-  @apply !bg-secondary
+  @apply !bg-custom-gradient;
 }
 
 @font-face {

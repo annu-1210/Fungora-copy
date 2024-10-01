@@ -14,7 +14,7 @@ function OurCulture() {
     "Join our community and immerse yourself in the Fungora way, fostering a life that's not only balanced and enriched but radiates vitality.";
 
   return (
-    <section>
+    <section id="ourCulture">
       <div className="relative z-20 pt-8 md:py-20 lg:py-28 xl:py-36 bg-primary ">
         <div className="px-[21px] md:px-6 xl:px-0 ml-auto max-w-[1200px] 2xl:max-w-[1296px] min-[1600px]:max-w-[1440px] 3xl:max-w-[1680px] flex flex-col lg:flex-row justify-center lg:justify-between items-center text-center lg:text-start">
           <div className="relative lg:w-5/12">
