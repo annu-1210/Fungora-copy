@@ -53,7 +53,7 @@ function Header() {
           </div>
         </div>
       </div>
-      {isOpen && <HeaderMobile />}
+      {isOpen && <HeaderMobile  isOpen={isOpen}/>}
     </nav>
   );
 }

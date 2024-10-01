@@ -19,7 +19,7 @@ function TestimonialSlider() {
           clickable: true,
           // el: '.swiper-pagination',
           // type: 'bullets',
-          bulletClass: ".swiper-pagination-bullet-active"
+          bulletClass: "swiper-pagination-bullet-active"
         }}
         breakpoints={{
           768: {
