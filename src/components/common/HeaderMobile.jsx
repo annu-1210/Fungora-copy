@@ -25,7 +25,7 @@ function HeaderMobile({ isOpen }) {
               return (
                 <a
                   key={item.name}
-                  href="/"
+                  href={item.link}
                   className="nav-links underline-animation "
                 >
                   {item.name}

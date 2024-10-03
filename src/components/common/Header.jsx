@@ -32,7 +32,7 @@ function Header() {
             return (
               <a
                 key={item.name}
-                href="/"
+                href={item.link}
                 className="nav-links underline-animation hover:after:animate-underline-scale"
               >
                 {item.name}
