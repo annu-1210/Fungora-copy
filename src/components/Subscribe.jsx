@@ -36,7 +36,7 @@ function Subscribe() {
               <Text label={detail} size="sm" color="primary" />
             </p>
             <form>
-              <div className="flex justify-between border border-secondary rounded-full pl-3 pr-1.5 md:px-4 py-1.5 lg:py-3.5 w-full max-w-[633px] mt-4 md:mt-6 xl:mt-[35px]">
+              <div className="flex justify-between border border-secondary rounded-full pl-3 pr-1.5 md:px-4 py-1.5 lg:py-3.5 w-full max-w-[633px] mt-4 md:mt-6 xl:mt-[35px] z-50">
                 <input
                   type="email"
                   name="email"

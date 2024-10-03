@@ -26,7 +26,7 @@ const button = tv(
 
 function ActionButton({ label, color, size }) {
   return (
-    <div>
+    <div className="z-50 flex">
       <button className={button({ color, size })}>{label}</button>
     </div>
   );
