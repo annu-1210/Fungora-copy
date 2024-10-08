@@ -16,12 +16,17 @@ export default function Home() {
   return (
     <section className="w-full">
       <div className="w-full max-w-[1920px] mx-auto relative overflow-hidden">
-      <Image
-          src="/images/png/Noise & Texture.png"
+        <div className="absolute top-0 left-0 w-full h-full z-[99999] pointer-events-none">
+        <Image
+          src="/images/noise-texture-bg.webp"
           alt="Noise & Texture-img"
-          fill={true}
-          className="absolute top-0 left-0 bottom-0 right-0 w-full h-full z-[99999] pointer-events-none bg-transparent object-cover"
+          layout="fill"
+          objectFit="cover"
+          priority
+          className="!pointer-events-none "
         />
+        </div>
+      
         <div className="hidden lg:flex fixed 3xl:absolute right-3 sm:right-5 top-[50vh] translate-y-[-50%] z-50"><FAB /></div>
         <Header />
         <Hero />
