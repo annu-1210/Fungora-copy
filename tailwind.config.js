@@ -27,6 +27,7 @@ module.exports = {
         "SocialLinks-Background": "rgb(51, 0, 91, 0.14)",
         "footer-Border": "rgb(51, 0, 91, 0.15)",
         "yellow-star": "rgba(255, 184, 0, 1)",
+        "pagination-bullets":"#9b7d96",
       },
       screens: {
         'xsm': '425px',

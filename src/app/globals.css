@@ -112,7 +112,6 @@ body {
   @apply scale-x-100;
 }
 
-
 .footer-links {
   @apply text-base font-HelveticaNue !leading-[24px] text-secondary opacity-100;
 }
@@ -122,17 +121,20 @@ body {
   @apply opacity-40;
 }
 
-.custom-testimonial-wrapper{
-  @apply !flex !gap-5 !h-[460px]
+.custom-testimonial-wrapper {
+  @apply !flex !gap-5 !h-[460px];
 }
 
-.swiper-pagination-bullets.swiper-pagination-bullet, 
-.swiper-pagination-horizontal.swiper-pagination-bullets.swiper-pagination-bullet{
-  @apply !w-[14px] !h-[14px];
+.swiper-pagination{
+  @apply flex items-center justify-center gap-2;
 }
 
-.swiper-pagination-bullet-active {
-  @apply !bg-custom-gradient;
+.custom-pagination-bullet {
+  @apply !w-[14px] !h-[14px] rounded-full !bg-pagination-bullets opacity-50;
+}
+
+.custom-pagination-bullet-active {
+  @apply !bg-custom-gradient opacity-100;
 }
 
 @font-face {

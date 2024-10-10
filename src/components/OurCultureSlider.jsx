@@ -9,7 +9,7 @@ import { slides } from "./common/Helper";
 function OurCultureSlider() {
   const bottleImage = "/images/avif/slider-bottle.avif";
   return (
-    <div className="w-[98%] sm:w-11/12 lg:w-7/12 3xl:w-7/12 lg:pl-10 3xl:pl-0 pt-5 md:pt-7 lg:pt-0">
+    <div className="w-[98%] sm:w-11/12 lg:w-7/12 3xl:w-7/12 lg:pl-10 3xl:pl-0 pt-5 md:pt-7 lg:pt-0 flex items-center justify-center">
       <Swiper
         loop={true}
         slidesPerView={"auto"}

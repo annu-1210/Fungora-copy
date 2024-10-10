@@ -4,15 +4,19 @@ import Image from "next/image";
 function WhyFungora() {
   return (
     <section id="whyFungora">
-      <div className="relative z-0 bg-tertiary ">
-        <div className="relative z-0 px-[21px] md:px-6 xl:px-0 m-auto xl:max-w-[1000px] 2xl:max-w-[1211px] pt-10 md:pt-20 lg:pt-24 xl:pt-24 pb-10 lg:pb-24 xl:pb-32" style={{ objectFit: 'cover'}}>
+      <div className="relative z-10 bg-tertiary ">
+        <div
+          className="relative z-10 px-[21px] md:px-6 xl:px-0 m-auto xl:max-w-[1000px] 2xl:max-w-[1211px] pt-10 md:pt-20 lg:pt-24 xl:pt-24 pb-10 lg:pb-24 xl:pb-32"
+          style={{ objectFit: "cover" }}
+        >
           <video
             controls
             muted
             loop
-            className="rounded-[24px] transition-all duration-300 sm:rounded-[52px] border-[5px] mx-auto border-secondary object-cover w-full h-full aspect-video"
+            objectFit
+            className="rounded-[24px] transition-all duration-300 sm:rounded-[52px] border-[5px] mx-auto border-secondary object-cover w-full h-full aspect-video z-30"
             poster="/images/png/poster.png"
-            style={{ objectFit: 'cover'}}
+            style={{ objectFit: "cover" }}
           >
             <source src="/fungora-video.mp4" type="video/mp4" />
             Your browser does not support the video tag.
@@ -24,13 +28,6 @@ function WhyFungora() {
             height={87}
             className="max-w-[20px] md:max-w-[50px] 3xl:max-w-full bottom-[81%] sm:bottom-[21%] absolute left-[60%] sm:left-[-3%]"
           />
-          {/* <Image
-            src="/images/png/why-fungora-shell.png"
-            alt="shell-img"
-            width={66}
-            height={66}
-            className="absolute z-30 duration-500 ease-in-out -translate-x-1/2 -translate-y-1/2 cursor-pointer top-1/2 left-1/2 md:opacity-0 md:group-hover:opacity-100 max-w-[40px] md:max-w-full"
-          /> */}
         </div>
         <Image
           src="/images/avif/mushroom-bg-2.avif"

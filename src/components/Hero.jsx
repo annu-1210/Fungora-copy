@@ -32,7 +32,7 @@ function Hero() {
           height={704}
           className="w-full absolute top-[-15%] sm:top-0 left-0 bg-cover z-10 object-cover pointer-events-none h-[348px] md:h-[704px]"
         />
-        <div className="pt-[188px] lg:pt-[180px] 3xl:pt-[221px] relative z-3x0">
+        <div className="pt-[188px] lg:pt-[180px] 3xl:pt-[221px] relative z-30">
           <h2
             style={{
               transform: `scale(${scale})`,
@@ -42,15 +42,15 @@ function Hero() {
           >
             <Text label={mainHeading} size="xxxl" color="primary" />
           </h2>
-          <div className="relative z-30 flex flex-col items-center justify-center w-full h-full overflow-hidden pt-14 flex-nowrap ">
+          <div className="relative z-50 flex flex-col items-center justify-center w-full h-full overflow-hidden pt-14 flex-nowrap ">
             <Image
               src="/images/hero-bottle-img.webp"
               alt="hero-bottle-img"
               width={214}
               height={666}
-              className="max-w-[170px] z-0 sm:max-w-[180px] 3xl:max-w-[214px] transition-all ease-in-out duration-500 "
+              className="max-w-[170px] relative block z-50 sm:max-w-[180px] 3xl:max-w-[214px] transition-all ease-in-out duration-500 "
             />
-            <div className="flex translate-x-[0%]  gap-36 flex-nowrap absolute justify-center h-full overflow-hidden  z-40 w-full items-center">
+            <div className="flex translate-x-[0%]  gap-36 flex-nowrap absolute justify-center h-full overflow-hidden  z-50 w-full items-center">
               {Array(3)
                 .fill()
                 .map((_, index) => (
@@ -67,7 +67,7 @@ function Hero() {
                   />
                 ))}
             </div>
-            <div className="absolute z-40 flex justify-center w-full gap-8 overflow-hidden flex-nowrap">
+            <div className="absolute z-50 flex justify-center w-full gap-8 overflow-hidden flex-nowrap">
               {Array(3)
                 .fill()
                 .map((_, index) => (
@@ -80,11 +80,19 @@ function Hero() {
                     style={{
                       transform: `translateX(${scrollPosition * 2}px)`,
                     }}
-                    className="z-50 block object-cover w-full transition-transform duration-500 ease-in-out transform scale-105  md:hidden"
+                    className="z-50 block object-cover w-full transition-transform duration-500 ease-in-out transform scale-105 md:hidden"
                   />
                 ))}
             </div>
           </div>
+        </div>
+        <div className="absolute bottom-[-156px] z-40 w-full h-40 ">
+          <Image
+            src="/images/png/gradient-bg-1.webp"
+            alt="gradient-bg"
+            layout="fill"
+            objectFit="cover"
+          />
         </div>
       </div>
     </section>

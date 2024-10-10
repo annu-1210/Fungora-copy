@@ -10,16 +10,15 @@ import Text from "./common/Text";
 
 function TestimonialSlider() {
   return (
-    <div className="w-[98%] sm:w-11/12 lg:w-8/12 lg:pl-10 pt-5 md:pt-7 lg:pt-0 flex gap-10">
+    <div className="w-[98%] sm:w-11/12 lg:w-8/12 lg:pl-10 pt-5 md:pt-7 lg:pt-0 flex  gap-10">
       <Swiper
         slidesPerView={1}
         spaceBetween={30}
         modules={[Pagination, Navigation]}
         pagination={{
           clickable: true,
-          // el: '.swiper-pagination',
-          // type: 'bullets',
-          bulletClass: "swiper-pagination-bullet-active"
+          bulletClass: "custom-pagination-bullet", 
+          bulletActiveClass: "custom-pagination-bullet-active", 
         }}
         breakpoints={{
           768: {

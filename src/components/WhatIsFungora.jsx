@@ -19,7 +19,7 @@ function WhatIsFungora() {
 
   return (
     <section id="whatIsFungora">
-      <div className="relative pt-20 r bg-tertiary md:pt-24 lg:pt-32 ">
+      <div className="relative pt-20 bg-tertiary md:pt-24 lg:pt-32 ">
         <Image
           src="/images/avif/mushroom-bg.avif"
           alt="mushroom-img"
@@ -56,7 +56,7 @@ function WhatIsFungora() {
                 alt="image"
                 width={565}
                 height={696}
-                className="pt-5 md:pt-8 2xl:pt-12 hidden md:block z-20 max-w-[360px] lg:max-w-[460px] max-h-[598px]"
+                className="pt-5 md:pt-8 2xl:pt-12 hidden md:block z-20 md:max-w-[320px] lg:max-w-[460px] max-h-[598px]"
               />
             </div>
             <div className="flex flex-col items-center md:items-end md:w-6/12 ">
@@ -65,7 +65,7 @@ function WhatIsFungora() {
                 alt="image"
                 width={583}
                 height={423}
-                className="py-8 md:pb-0 2xl:pt-11 w-full max-w-[500px] md:max-w-full max-auto md:mx-0"
+                className="py-8 md:pb-0 2xl:pt-11 w-full max-w-[500px] md:max-w-full mx-auto md:mx-0"
               />
               <div>
                 <p className="max-w-[425px] 3xl:max-w-[480px]">
