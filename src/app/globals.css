@@ -64,16 +64,12 @@ body {
 
 @layer components {
   .custom-testimonial-slide {
-    /* height: 372px !important; */
     max-height: 380px !important;
-    /* width: 274px !important; */
     max-width: 274px !important;
-    /* margin-right: 20px !important; */
     opacity: 1 !important;
 
-    @screen sm {
+    @screen xsm {
       max-height: 420px !important;
-      /* margin: 0 auto !important; */
       max-width: 320px !important;
     }
 

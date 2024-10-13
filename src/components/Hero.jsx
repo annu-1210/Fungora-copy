@@ -78,7 +78,7 @@ function Hero() {
                     width={2016}
                     height={296}
                     style={{
-                      transform: `translateX(${scrollPosition * 2}px)`,
+                      transform: `translateX(${scrollPosition * 1}px)`,
                     }}
                     className="z-50 block object-cover w-full transition-transform duration-500 ease-in-out transform scale-105 md:hidden"
                   />
@@ -86,7 +86,7 @@ function Hero() {
             </div>
           </div>
         </div>
-        <div className="absolute bottom-[-156px] z-40 w-full h-40 ">
+        <div className="absolute bottom-[-126px] z-20 w-full h-32 ">
           <Image
             src="/images/png/gradient-bg-1.webp"
             alt="gradient-bg"

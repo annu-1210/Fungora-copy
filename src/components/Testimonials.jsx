@@ -1,8 +1,8 @@
 import React from "react";
 import Text from "./common/Text";
 import TestimonialSlider from "./TestimonialSlider";
-import PrevIcon from "../app/svgs/prevIcon.svg";
-import NextIcon  from "../app/svgs/nextIcon.svg";
+import { PrevArrow } from "./common/Icon";
+import { NextArrow } from "./common/Icon";
 
 function Testimonials() {
   const Heading = "What people say about Fungora?";
@@ -17,10 +17,10 @@ function Testimonials() {
             </h2>
             <div className="hidden lg:flex absolute justify-start mt-12 gap-6 h-[20px] items-center w-full  z-10  left-0 ">
               <button className="custom-prev-button swiper-button-disabled">
-                <PrevIcon width={50} />
+                <PrevArrow width={50} />
               </button>
               <button className="custom-next-button max-w-[55px] flex justify-center items-center w-full swiper-button-disabled">
-                <NextIcon width={55} />
+                <NextArrow width={55} />
               </button>
             </div>
           </div>

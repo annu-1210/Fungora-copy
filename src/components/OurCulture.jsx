@@ -23,7 +23,7 @@ function OurCulture() {
               alt="star"
               width={68}
               height={108}
-              className=" max-w-[30px] md:max-w-10 lg:max-w-full absolute right-[17%] md:right-[22%] lg:right-0 xl:right-[11%] top-[-5%] xsm:top-[-32%] sm:top-[-60%] md:top-[-8%] z-20"
+              className=" max-w-[30px] md:max-w-10 lg:max-w-full absolute right-[22%] xsm:right-[17%] md:right-[22%] lg:right-0 xl:right-[11%] top-[-16%] xsm:top-[-32%] sm:top-[-60%] md:top-[-8%] z-20"
             />
             <p className="flex items-center justify-center lg:justify-start">
               <Text label={heading} size="md" color="primary" />
@@ -61,6 +61,7 @@ function OurCulture() {
             alt="gradient-bg"
             layout="fill"
             objectFit="cover"
+            className="relative z-10"
           />
         </div>
         <div className=" w-full h-32 absolute bottom-[-126px] flex z-0 ">

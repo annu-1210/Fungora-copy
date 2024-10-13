@@ -8,19 +8,19 @@ import { FaTiktok } from "react-icons/fa";
 export const navLinks = [
   {
     name: "About us",
-    link:"#about us"
+    link: "#about us",
   },
   {
     name: "What’s Fungora",
-    link:"#whatIsFungora"
+    link: "#whatIsFungora",
   },
   {
     name: "Why Fungora",
-    link:"#whyFungora"
+    link: "#whyFungora",
   },
   {
     name: "Our Culture",
-    link:"#ourCulture"
+    link: "#ourCulture",
   },
 ];
 

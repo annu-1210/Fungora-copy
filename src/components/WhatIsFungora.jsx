@@ -2,6 +2,7 @@ import React from "react";
 import Image from "next/image";
 import Text from "./common/Text";
 import ActionButton from "./common/ActionButton";
+import { useState, useEffect } from "react";
 
 function WhatIsFungora() {
   const heading = "What is Fungora?";
@@ -17,6 +18,20 @@ function WhatIsFungora() {
   const fourthPara =
     "We’re committed to keeping it real with a pure, potent extract that provides a natural boost to both cognitive function and overall health.";
 
+  const [scrollPosition, setScrollPosition] = useState(0);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      setScrollPosition(window.scrollY);
+    };
+
+    window.addEventListener("scroll", handleScroll);
+
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, []);
+
   return (
     <section id="whatIsFungora">
       <div className="relative pt-20 bg-tertiary md:pt-24 lg:pt-32 ">
@@ -27,14 +42,20 @@ function WhatIsFungora() {
           height={700}
           className="bottom-[4%] md:bottom-0 xl:bottom-[-6%] left-0  absolute  md:max-w-[500px] lg:max-w-[700px] xl:max-w-[750px] 2xl:max-w-[900px] 3xl:max-w-[950px] z-10"
         />
-        <div className="flex flex-col text-center md:text-start px-[21px] md:px-6 xl:px-0 m-auto xl:max-w-[1000px] 2xl:max-w-[1196px]  ">
+        <div
+          className="flex flex-col text-center md:text-start px-[21px] md:px-6 xl:px-0 m-auto xl:max-w-[1000px] 2xl:max-w-[1196px]"
+          // style={{
+          //   transform: `translateY(${(scrollPosition * -0.5}px)`
+          //   transition: "transform 0.5s ease-out",
+          // }}
+        >
           <div className="relative flex flex-col gap-4 md:gap-8">
             <Image
               src="/images/png/star.png"
               alt="star"
               width={68}
               height={10}
-              className="max-w-[30px] md:max-w-10 lg:max-w-full absolute right-[50px] md:right-[20%] lg:right-[29%] xl:right-[12%] 2xl:right-[26%] 3xl:right-[10%] top-[-41%] sm:top-[-60%] md:top-0"
+              className="max-w-[30px] md:max-w-10 lg:max-w-full absolute z-10 right-[50px] md:right-[20%] lg:right-[29%] xl:right-[12%] 2xl:right-[26%] 3xl:right-[10%] top-[-41%] sm:top-[-60%] md:top-0"
             />
             <p>
               <Text label={heading} size="md" color="primary" />

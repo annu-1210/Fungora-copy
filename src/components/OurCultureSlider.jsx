@@ -12,12 +12,17 @@ function OurCultureSlider() {
     <div className="w-[98%] sm:w-11/12 lg:w-7/12 3xl:w-7/12 lg:pl-10 3xl:pl-0 pt-5 md:pt-7 lg:pt-0 flex items-center justify-center">
       <Swiper
         loop={true}
-        slidesPerView={"auto"}
+        slidesPerView={1.5}
         spaceBetween={30}
         modules={[Autoplay]}
         autoplay={{
           delay: 1000,
           disableOnInteraction: false,
+        }}
+        breakpoints={{
+          768: {
+            slidesPerView: "auto",
+          },
         }}
       >
         {slides.map((slide, index) => (
@@ -35,7 +40,7 @@ function OurCultureSlider() {
                 alt={`Slide ${index + 1}`}
                 width={398}
                 height={694}
-                className="relative z-0 w-full "
+                className="relative z-0 w-full"
               />
             </div>
           </SwiperSlide>

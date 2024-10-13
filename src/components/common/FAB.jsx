@@ -1,19 +1,18 @@
 import React from "react";
-import Icon from "./Icon";
+import SocialIcon from "./Social_Icon";
 import { FabLinks } from "./Helper";
 
 function FAB() {
-
   return (
     <div className="gap-6 z-50 flex transition-all duration-200 ease-in-out lg:flex-col max-w-[232px] max-h-[232px]">
       {FabLinks.map((item) => {
         return (
-          <Icon
+          <SocialIcon
             key={item.id}
             className="text-white bg-secondary lg:bg-FabLinks-Background lg:text-secondary"
           >
             {item.icon}
-          </Icon>
+          </SocialIcon>
         );
       })}
     </div>

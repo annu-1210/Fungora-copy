@@ -15,14 +15,14 @@ function GrabNow() {
               alt="star"
               width={68}
               height={108}
-              className=" absolute left-[71%] xsm:left-[60%] lg:left-[64%] top-[30%] xsm:top-9 md:top-9 z-40 max-w-[30px] md:max-w-10 lg:max-w-full"
+              className=" absolute left-[71%] xsm:left-[55%] lg:left-[64%] top-[30%] xsm:top-16 md:top-9 z-40 max-w-[30px] md:max-w-10 lg:max-w-full"
             />
             <Image
               src="/images/png/star.png"
               alt="star"
               width={68}
               height={108}
-              className=" absolute left-[47%] xsm:left-[42%]  lg:left-[56%] md:bottom-[-34%] bottom-[-84px] lg:bottom-[-40%] z-40 max-w-[30px] md:max-w-10 lg:max-w-full"
+              className=" absolute left-[47%] xsm:left-[42%]  lg:left-[56%] md:bottom-[-34%] bottom-[-84px] xsm:bottom-[-65px] lg:bottom-[-40%] z-40 max-w-[30px] md:max-w-10 lg:max-w-full"
             />
             <Image
               src="/images/hero-bottle-img.webp"

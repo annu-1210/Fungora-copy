@@ -1,6 +1,6 @@
 import React from "react";
 import { IoIosArrowRoundForward } from "react-icons/io";
-import Icon from "./Icon";
+import SocialIcon from "./Social_Icon";
 import { FooterData } from "./Helper";
 import { socialLinks } from "./Helper";
 
@@ -55,12 +55,12 @@ function Footer() {
             <div className="flex items-center gap-6 mt-4">
               {socialLinks.map((item) => {
                 return (
-                  <Icon
+                  <SocialIcon
                     key={item.id}
                     className=" text-secondary bg-SocialLinks-Background"
                   >
                     {item.icon}
-                  </Icon>
+                  </SocialIcon>
                 );
               })}
             </div>

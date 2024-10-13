@@ -2,8 +2,8 @@ import React, { useState } from "react";
 import Image from "next/image";
 import ActionButton from "./ActionButton";
 import { RxCross2 } from "react-icons/rx";
-import  FungoraLogo  from "../../app/svgs/logo.svg";
-import  MenuIcon  from "../../app/svgs/menu.svg";
+import { Logo } from "./Icon";
+import { Menu } from "./Icon";
 import { navLinks } from "./Helper";
 import HeaderMobile from "./HeaderMobile";
 
@@ -25,7 +25,7 @@ function Header() {
       />
       <div className="relative z-20 flex items-center justify-between  mx-auto max-w-[1440px]">
         <a href="/" className="flex items-center gap-1 w-[152px] h-[42px]">
-          <FungoraLogo width={152} height={42} />
+          <Logo width={152} height={42} />
         </a>
         <div className="items-center hidden gap-8 lg:flex">
           {navLinks.map((item) => {
@@ -45,15 +45,11 @@ function Header() {
             <ActionButton label="Shop now" color="primary" size="sm" />
           </div>
           <div className="flex lg:hidden" onClick={toggleNavbar}>
-            {!isOpen ? (
-              <MenuIcon width={30} height={10} />
-            ) : (
-              <RxCross2 size={20} />
-            )}
+            {!isOpen ? <Menu width={30} height={10} /> : <RxCross2 size={20} />}
           </div>
         </div>
       </div>
-      {isOpen && <HeaderMobile  isOpen={isOpen}/>}
+      {isOpen && <HeaderMobile isOpen={isOpen} />}
     </nav>
   );
 }

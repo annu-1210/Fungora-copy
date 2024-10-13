@@ -26,7 +26,7 @@ function Subscribe() {
             alt="image"
             width={553}
             height={652}
-            className="pt-5 md:pt-0 w-full max-w-[340px] xsm:max-w-[384px] sm:max-w-[500px] md:max-w-[360px] lg:max-w-[406px] xl:max-w-[500px] max-auto md:mx-0 z-10"
+            className="pt-5 md:pt-0 w-full max-w-[340px] xsm:max-w-[384px] sm:max-w-[500px] md:max-w-[360px] lg:max-w-[406px] xl:max-w-[500px] max-auto md:mx-0 z-10 order-2 md:order-1"
           />
           <div className="order-1 md:w-6/12 lg:w-7/12 md:order-2">
             <h2>
