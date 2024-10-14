@@ -34,7 +34,7 @@ function TestimonialSlider() {
       >
         {testimonials.map((slide, index) => (
           <SwiperSlide key={index} className="custom-testimonial-slide">
-            <div className="relative w-full px-6 py-10 mx-auto transition-all duration-500 ease-in-out bg-quinary rounded-3xl group hover:bg-secondary max-h-[430px]">
+            <div className="relative w-full px-6 py-10 mx-auto transition-all duration-500 ease-in-out bg-quinary rounded-3xl group hover:bg-secondary max-h-[390px] xsm:max-h-[420px] 3xl:max-h-[430px]">
               <div className="flex items-center gap-1">
                 {[...Array(5)].map((_, index) => (
                   <GiRoundStar

@@ -75,7 +75,6 @@ body {
     }
 
     @screen xl {
-      max-height: 430px !important;
       max-width: 320px !important;
     }
     @screen 3xl {
@@ -119,11 +118,11 @@ body {
 }
 
 .custom-testimonial-wrapper {
-  @apply !flex !gap-5 !h-[460px];
+  @apply !flex !gap-5 !h-[440px];
 }
 
 .swiper-pagination{
-  @apply flex items-center justify-center gap-2;
+  @apply flex items-center justify-center gap-2 mt-7;
 }
 
 .custom-pagination-bullet {
