@@ -14,7 +14,7 @@ import Image from "next/image";
 export default function Home() {
   return (
     <section className="w-full">
-      <div className="w-full max-w-[1920px] mx-auto relative overflow-hidden">
+      <div className="w-full max-w-[1920px] mx-auto relative overflow-hidden scroll-smooth">
         <div className="absolute top-0 left-0 w-full h-full z-[99999] pointer-events-none">
           <Image
             src="/images/png/Noise-Texture.webp"

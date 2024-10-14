@@ -12,7 +12,7 @@ function TestimonialSlider() {
   return (
     <div className="w-[98%] sm:w-11/12 lg:w-8/12 lg:pl-10 pt-5 md:pt-7 lg:pt-0 flex gap-10">
       <Swiper
-        slidesPerView={1}
+        slidesPerView={'auto'}
         spaceBetween={30}
         modules={[Pagination, Navigation]}
         pagination={{
@@ -34,7 +34,7 @@ function TestimonialSlider() {
       >
         {testimonials.map((slide, index) => (
           <SwiperSlide key={index} className="custom-testimonial-slide">
-            <div className="relative w-full px-6 py-10 mx-auto transition-all duration-500 ease-in-out bg-quinary rounded-3xl group hover:bg-secondary">
+            <div className="relative w-full px-6 py-10 mx-auto transition-all duration-500 ease-in-out bg-quinary rounded-3xl group hover:bg-secondary max-h-[430px]">
               <div className="flex items-center gap-1">
                 {[...Array(5)].map((_, index) => (
                   <GiRoundStar

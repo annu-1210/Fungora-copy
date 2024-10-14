@@ -1,6 +1,7 @@
 import React from "react";
 import Image from "next/image";
 import Text from "./common/Text";
+import { Star } from "./common/Icon";
 import ActionButton from "./common/ActionButton";
 
 function GrabNow() {
@@ -10,20 +11,12 @@ function GrabNow() {
       <div className="relative">
         <div className="z-10 px-4 pt-24 pb-20 overflow-hidden md:overflow-visible sm:py-32 bg-tertiary ">
           <div className="max-w-[1196px] w-full bg-custom-gradient mx-auto rounded-[24px] px-5 sm:px-20 lg:px-32 py-10 lg:py-24 flex flex-col lg:flex-row gap-6 h-[420px] lg:h-full lg:justify-between  items-center relative z-20">
-            <Image
-              src="/images/png/star.png"
-              alt="star"
-              width={68}
-              height={108}
-              className=" absolute left-[71%] xsm:left-[55%] lg:left-[64%] top-[30%] xsm:top-16 md:top-9 z-40 max-w-[30px] md:max-w-10 lg:max-w-full"
-            />
-            <Image
-              src="/images/png/star.png"
-              alt="star"
-              width={68}
-              height={108}
-              className=" absolute left-[47%] xsm:left-[42%]  lg:left-[56%] md:bottom-[-34%] bottom-[-84px] xsm:bottom-[-65px] lg:bottom-[-40%] z-40 max-w-[30px] md:max-w-10 lg:max-w-full"
-            />
+            <span className=" absolute left-[71%] xsm:left-[55%] lg:left-[64%] top-[30%] xsm:top-16 md:top-9 z-40 max-w-[30px] md:max-w-10 lg:max-w-full">
+              <Star />
+            </span>
+            <span className=" absolute left-[47%] xsm:left-[42%]  lg:left-[56%] md:bottom-[-34%] bottom-[-84px] xsm:bottom-[-65px] lg:bottom-[-40%] z-40 max-w-[30px] md:max-w-10 lg:max-w-full">
+              <Star />
+            </span>
             <Image
               src="/images/hero-bottle-img.webp"
               alt="star"
@@ -65,7 +58,7 @@ function GrabNow() {
           alt="fungora"
           width={2016}
           height={296}
-          className="hidden z-0 md:block absolute top-[50px]  lg:top-0 h-[220px] xl:max-w-[1440px] 3xl:max-w-[1920px]"
+          className="hidden z-0 md:block absolute top-[50px]  lg:top-0 h-[220px] 3xl:h-[294px] xl:max-w-[1440px] 3xl:max-w-[1920px]"
         />
         <Image
           src="/images/png/fungora-img-mobile2.png"

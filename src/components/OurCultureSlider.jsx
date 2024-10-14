@@ -12,7 +12,6 @@ function OurCultureSlider() {
     <div className="w-[98%] sm:w-11/12 lg:w-7/12 3xl:w-7/12 lg:pl-10 3xl:pl-0 pt-5 md:pt-7 lg:pt-0 flex items-center justify-center">
       <Swiper
         loop={true}
-        slidesPerView={1.5}
         spaceBetween={30}
         modules={[Autoplay]}
         autoplay={{
@@ -20,7 +19,13 @@ function OurCultureSlider() {
           disableOnInteraction: false,
         }}
         breakpoints={{
+          0: {
+            slidesPerView: "auto",
+          },
           768: {
+            slidesPerView: 3,
+          },
+          1280: {
             slidesPerView: "auto",
           },
         }}

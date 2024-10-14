@@ -2,6 +2,7 @@ import React from "react";
 import Image from "next/image";
 import Text from "./common/Text";
 import ActionButton from "./common/ActionButton";
+import { Star } from "./common/Icon";
 import { useState, useEffect } from "react";
 
 function WhatIsFungora() {
@@ -50,13 +51,9 @@ function WhatIsFungora() {
           // }}
         >
           <div className="relative flex flex-col gap-4 md:gap-8">
-            <Image
-              src="/images/png/star.png"
-              alt="star"
-              width={68}
-              height={10}
-              className="max-w-[30px] md:max-w-10 lg:max-w-full absolute z-10 right-[50px] md:right-[20%] lg:right-[29%] xl:right-[12%] 2xl:right-[26%] 3xl:right-[10%] top-[-41%] sm:top-[-60%] md:top-0"
-            />
+            <span className="absolute z-30 right-[50px] md:right-[20%] lg:right-[29%] xl:right-[12%] max-h-[80px] 2xl:right-[26%] 3xl:right-[10%] top-[-41%] sm:top-[-60%] md:top-0">
+              <Star />
+            </span>
             <p>
               <Text label={heading} size="md" color="primary" />
             </p>

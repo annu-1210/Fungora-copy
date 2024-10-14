@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import Image from "next/image";
 import ActionButton from "./ActionButton";
 import { RxCross2 } from "react-icons/rx";
@@ -6,6 +6,8 @@ import { Logo } from "./Icon";
 import { Menu } from "./Icon";
 import { navLinks } from "./Helper";
 import HeaderMobile from "./HeaderMobile";
+import AOS from "aos";
+import 'aos/dist/aos.css'
 
 function Header() {
   const [isOpen, setOpen] = useState(false);
@@ -13,6 +15,9 @@ function Header() {
   const toggleNavbar = () => {
     setOpen(!isOpen);
   };
+  useEffect(()=>{
+    AOS.init({duration: 3000})
+  },[])
 
   return (
     <nav className="absolute top-0 w-full px-4 pt-7 mx-auto lg:pt-[30px] 3xl:pt-[33px] z-50 ">
@@ -20,7 +25,7 @@ function Header() {
         src="/images/avif/navbar-bg.avif"
         width={1440}
         height={20}
-        alt=""
+        alt="bg"
         className="w-full max-w-[1920px] top-0 lg:top-[-70%] left-0 absolute z-0"
       />
       <div className="relative z-20 flex items-center justify-between  mx-auto max-w-[1440px]">
@@ -49,7 +54,7 @@ function Header() {
           </div>
         </div>
       </div>
-      {isOpen && <HeaderMobile isOpen={isOpen} />}
+      {isOpen && <HeaderMobile isOpen={isOpen} data-aos='fade-right'/>}
     </nav>
   );
 }

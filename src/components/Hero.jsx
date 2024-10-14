@@ -24,7 +24,7 @@ function Hero() {
   const opacity = Math.max(1 - scrollPosition / 300, 0);
   return (
     <section>
-      <div className="max-w-[1920px] bg-primary relative  ">
+      <div className="max-w-[1920px] bg-primary relative">
         <Image
           src="/images/png/hero-bg-img.png"
           alt="hero-bg"
@@ -86,7 +86,7 @@ function Hero() {
             </div>
           </div>
         </div>
-        <div className="absolute bottom-[-126px] z-20 w-full h-32 ">
+        <div className="absolute bottom-[-126px] lg:bottom-[-126px] z-20 w-full h-32 lg:h-32 object-cover">
           <Image
             src="/images/png/gradient-bg-1.webp"
             alt="gradient-bg"
