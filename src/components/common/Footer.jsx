@@ -57,7 +57,8 @@ function Footer() {
                 return (
                   <SocialIcon
                     key={item.id}
-                    className=" text-secondary bg-SocialLinks-Background"
+                    className="text-secondary bg-SocialLinks-Background"
+                    link={item.link}
                   >
                     {item.icon}
                   </SocialIcon>

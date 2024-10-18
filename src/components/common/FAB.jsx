@@ -10,6 +10,7 @@ function FAB() {
           <SocialIcon
             key={item.id}
             className="text-white bg-secondary lg:bg-FabLinks-Background lg:text-secondary"
+            link={item.link}
           >
             {item.icon}
           </SocialIcon>

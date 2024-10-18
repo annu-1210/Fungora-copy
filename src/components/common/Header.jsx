@@ -7,7 +7,7 @@ import { Menu } from "./Icon";
 import { navLinks } from "./Helper";
 import HeaderMobile from "./HeaderMobile";
 import AOS from "aos";
-import 'aos/dist/aos.css'
+import "aos/dist/aos.css";
 
 function Header() {
   const [isOpen, setOpen] = useState(false);
@@ -15,9 +15,19 @@ function Header() {
   const toggleNavbar = () => {
     setOpen(!isOpen);
   };
-  useEffect(()=>{
-    AOS.init({duration: 3000})
-  },[])
+  
+  useEffect(() => {
+    AOS.init({ duration: 3000 });
+    
+    if (isOpen) {
+      document.body.classList.add("overflow-hidden");
+    } else {
+      document.body.classList.remove("overflow-hidden");
+    }
+    return () => {
+      document.body.classList.remove("overflow-hidden");
+    };
+  }, [isOpen]);
 
   return (
     <nav className="absolute top-0 w-full px-4 pt-7 mx-auto lg:pt-[30px] 3xl:pt-[33px] z-50 ">
@@ -54,7 +64,7 @@ function Header() {
           </div>
         </div>
       </div>
-      {isOpen && <HeaderMobile isOpen={isOpen} data-aos='fade-right'/>}
+      {isOpen && <HeaderMobile isOpen={isOpen} data-aos="fade-right" />}
     </nav>
   );
 }

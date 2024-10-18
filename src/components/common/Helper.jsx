@@ -28,18 +28,22 @@ export const FabLinks = [
   {
     id: 1,
     icon: <FaAmazon />,
+    link: "https://www.amazon.com",
   },
   {
     id: 2,
     icon: <FaFacebookF />,
+    link: "https://www.facebook.com",
   },
   {
     id: 3,
     icon: <FaInstagram />,
+    link: "https://www.instagram.com",
   },
   {
     id: 4,
     icon: <FaTiktok />,
+    link: "https://www.tiktok.com",
   },
 ];
 
@@ -115,17 +119,21 @@ export const socialLinks = [
   {
     id: 1,
     icon: <FaFacebookF />,
+    link: "https://www.facebook.com",
   },
   {
     id: 2,
     icon: <FaInstagram />,
+    link: "https://www.instagram.com",
   },
   {
     id: 3,
     icon: <RiTwitterXLine />,
+    link: "https://www.twitter.com",
   },
   {
     id: 4,
     icon: <FaYoutube />,
+    link: "https://www.youtube.com",
   },
 ];
