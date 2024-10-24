@@ -7,12 +7,8 @@ import ActionButton from "./ActionButton";
 function HeaderMobile({ isOpen }) {
   return (
     <>
-      <aside
-        className={`z-50 flex justify-start w-full py-4 lg:hidden transition-transform duration-300 ease-in-out transform ${
-          isOpen ? "translate-x-0" : "translate-x-full"
-        }`}
-      >
-        <div className="flex gap-4 h-[calc(100vh-102px)] sm:h-[calc(100vh-110px)] backdrop-blur-sm flex-col items-center justify-between w-full rounded-[16px] p-4 bg-custom-gradient relative">
+      <aside className="z-50 flex justify-start w-full py-4 lg:hidden ">
+        <div className="flex gap-4 h-[calc(100vh-102px)] sm:h-[calc(100vh-110px)] backdrop-blur-sm flex-col items-center justify-between w-full rounded-[16px] p-4 bg-custom-gradient relative ">
           <span className="absolute right-24 top-3 w-fit h-fit">
             <Star />
           </span>

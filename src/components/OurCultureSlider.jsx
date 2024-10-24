@@ -25,8 +25,8 @@ function OurCultureSlider() {
           768: {
             slidesPerView: 3,
           },
-          1280: {
-            slidesPerView: "auto",
+          1440: {
+            slidesPerView: 2,
           },
         }}
       >
