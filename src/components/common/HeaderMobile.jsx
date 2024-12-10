@@ -9,6 +9,7 @@ function HeaderMobile({ isOpen }) {
     <>
       <aside className="z-50 flex justify-start w-full py-4 lg:hidden ">
         <div className="flex gap-4 h-[calc(100vh-102px)] sm:h-[calc(100vh-110px)] backdrop-blur-sm flex-col items-center justify-between w-full rounded-[16px] p-4 bg-custom-gradient relative ">
+          
           <span className="absolute right-24 top-3 w-fit h-fit">
             <Star />
           </span>
@@ -31,6 +32,7 @@ function HeaderMobile({ isOpen }) {
             <ActionButton label="Shop now" color="secondary" size="md" />
             <FAB />
           </div>
+          
         </div>
       </aside>
     </>

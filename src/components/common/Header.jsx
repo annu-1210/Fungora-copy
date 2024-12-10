@@ -38,6 +38,7 @@ function Header() {
         <a href="/" className="flex items-center gap-1 w-[152px] h-[42px]">
           <Logo width={152} height={42} />
         </a>
+        
         <div className="items-center hidden gap-8 lg:flex">
           {navLinks.map((item) => {
             return (
@@ -51,6 +52,7 @@ function Header() {
             );
           })}
         </div>
+        
         <div className="flex items-center justify-center gap-6">
           <div className="hidden sm:flex">
             <ActionButton label="Shop now" color="primary" size="sm" />
@@ -59,6 +61,7 @@ function Header() {
             {!isOpen ? <Menu width={30} height={10} /> : <RxCross2 size={20} />}
           </div>
         </div>
+        
       </div>
       {isOpen && (
         <div
